@@ -206,38 +206,41 @@ const resultOneElement = document.getElementById("result-one");
 const resultTwoElement = document.getElementById("result-two");
 
 function calcPartOne(input) {
+  var loopCounter = 0;
   for (var i = 0; i < input.length; i++) {
-    for (var y = i + 1; y < input.length; y++) {
-      if (checkSum(input[i], input[y])) {
-        const result = multiplyForResult(input[i], input[y]);
+    for (var j = i + 1; j < input.length; j++) {
+      if (checkSum(input[i], input[j])) {
+        const result = multiplyForResult(input[i], input[j]);
         resultOneElement.innerHTML = result;
       }
+      loopCounter++;
     }
   }
+  console.log(loopCounter);
 }
 
 function calcPartTwo(input) {
+  var loopCounter = 0;
   for (var i = 0; i < input.length; i++) {
-    for (var y = i + 1; y < input.length; y++) {
-      for (var k = y + 1; k < input.length; k++) {
-        if (checkSum(input[i], input[y], input[k])) {
-          const result = multiplyForResult(input[i], input[y], input[k]);
+    for (var j = i + 1; j < input.length; j++) {
+      for (var k = j + 1; k < input.length; k++) {
+        if (checkSum(input[i], input[j], input[k])) {
+          const result = multiplyForResult(input[i], input[j], input[k]);
           resultTwoElement.innerHTML = result;
         }
+        loopCounter++;
       }
     }
   }
+  console.log(loopCounter);
 }
 
-
 function checkSum(num1, num2, num3) {
-  if (num3) return num1 + num2 + num3 === 2020;
-  return num1 + num2 === 2020;
+  return num3 ? num1 + num2 + num3 === 2020 : num1 + num2 === 2020;
 }
 
 function multiplyForResult(num1, num2, num3) {
-  if (num3) return num1 * num2 * num3;
-  return num1 * num2;
+  return num3 ? num1 * num2 * num3 : num1 * num2;
 }
 
 calcPartOne(input);
