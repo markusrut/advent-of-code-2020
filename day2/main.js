@@ -18,12 +18,12 @@ function passwordContainsCharCount(low, high, char, password) {
 function calcPartTwo(input) {
   var validCount = 0;
   input.forEach((x) => {
-    if (passwordContainsCharPlacement(x.low, x.high, x.char, x.password)) validCount++;
+    if (passwordContainsSingleCharPlacement(x.low, x.high, x.char, x.password)) validCount++;
   });
   resultTwoElement.innerHTML = validCount;
 }
 
-function passwordContainsCharPlacement(first, second, char, password) {
+function passwordContainsSingleCharPlacement(first, second, char, password) {
   var matchCount = 0;
 
   if (password[first-1] === char)
