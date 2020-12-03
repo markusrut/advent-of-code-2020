@@ -2,8 +2,30 @@ const resultOneElement = document.getElementById("result-one");
 const resultTwoElement = document.getElementById("result-two");
 
 function calcPartOne(input) {
-  var movementRight = 3;
-  var movementDown = 1;
+  const movementRight = 3;
+  const movementDown = 1;
+  resultOneElement.innerHTML = calcTreeCount(
+    input,
+    movementRight,
+    movementDown
+  );
+}
+
+function calcPartTwo(input) {
+  let routesResult = [];
+  routesResult.push(calcTreeCount(input, 1, 1));
+  routesResult.push(calcTreeCount(input, 3, 1));
+  routesResult.push(calcTreeCount(input, 5, 1));
+  routesResult.push(calcTreeCount(input, 7, 1));
+  routesResult.push(calcTreeCount(input, 1, 2));
+
+  const sum = routesResult.reduce((prevValue, curValue) => {
+    return prevValue * curValue;
+  }, 1);
+  console.log(sum);
+}
+
+function calcTreeCount(input, movementRight, movementDown) {
   var position = { posX: 0, posY: 0 };
   var treeCount = 0;
 
@@ -13,7 +35,7 @@ function calcPartOne(input) {
     move(position, movementRight, movementDown, input);
   }
 
-  resultOneElement.innerHTML = treeCount;
+  return treeCount;
 }
 
 function move(position, movementRight, movementDown, input) {
@@ -23,19 +45,15 @@ function move(position, movementRight, movementDown, input) {
     position.posX + movementRight >= rowLength
       ? position.posX + movementRight - rowLength
       : position.posX + movementRight;
-      
+
   position.posY += movementDown;
 }
 
 function isTree(input, position) {
-  let char = input[position.posY][position.posX];
-  console.log(char);
-  let isTree = char === "#";
-  console.log(isTree);
-  return isTree;
+  return input[position.posY][position.posX] === "#";
 }
 
 // calcPartOne(inputTest);
 calcPartOne(input);
 // calcPartTwo(inputTest);
-// calcPartTwo(input);
+calcPartTwo(input);
