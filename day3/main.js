@@ -22,7 +22,7 @@ function calcPartTwo(input) {
   const sum = routesResult.reduce((prevValue, curValue) => {
     return prevValue * curValue;
   }, 1);
-  console.log(sum);
+  resultTwoElement.innerHTML = sum;
 }
 
 function calcTreeCount(input, movementRight, movementDown) {
