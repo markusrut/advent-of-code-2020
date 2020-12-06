@@ -2,28 +2,53 @@ const resultOneElement = document.getElementById("result-one");
 const resultTwoElement = document.getElementById("result-two");
 
 function calc(input) {
-  var questionSum = 0;
+  const grpAnswersMapped = input.map((group) =>
+    group.map((person) => getPersonAnswers(person))
+  );
 
-  input.forEach((grp) => {
-    questionSum += getGroupQuestionSum(grp);
+  var answersForAnyoneInGrpSum = 0;
+  var answersForEveryoneInGrpSum = 0;
+
+  grpAnswersMapped.forEach((group) => {
+    answersForAnyoneInGrpSum += getGroupAnswersForAnyone(group).length;
+    answersForEveryoneInGrpSum += getGroupAnswersForEveryone(group).length;
   });
 
-  resultOneElement.innerHTML = questionSum;
+  resultOneElement.innerHTML = answersForAnyoneInGrpSum;
+  resultTwoElement.innerHTML = answersForEveryoneInGrpSum;
 }
 
-function getGroupQuestionSum(grp) {
-  grpAnswers = [];
-  grp.forEach((answers) => {
-    for (let i = 0; i < answers.length; i++) {
-      const answer = answers[i];
-      if (!grpAnswers.includes(answer)) grpAnswers.push(answer);
-    }
+function getGroupAnswersForAnyone(group) {
+  var grpAnswers = [];
+  
+  group.forEach((personAnswers) => {
+    personAnswers.forEach((a) => {
+      if (!grpAnswers.includes(a)) grpAnswers.push(a);
+    });
   });
-  console.log(grpAnswers);
-  return grpAnswers.length;
+
+  return grpAnswers;
+}
+
+function getGroupAnswersForEveryone(group) {
+  var groupAnswers = group[0];
+
+  group.forEach((personAnswers) => {
+    groupAnswers = groupAnswers.filter((a) => personAnswers.includes(a));
+  });
+
+  return groupAnswers;
+}
+
+function getPersonAnswers(personStr) {
+  const personAnswers = [];
+  for (let i = 0; i < personStr.length; i++) {
+    personAnswers.push(personStr[i]);
+  }
+  return personAnswers;
 }
 
 calc(input);
-// calc(input);
+// calc(inputTest);
 // calcPartTwo(inputTest);
 // calcPartTwo(input);
