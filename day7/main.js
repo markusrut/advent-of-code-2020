@@ -1,31 +1,37 @@
 const resultOneElement = document.getElementById("result-one");
 const resultTwoElement = document.getElementById("result-two");
 
-function calc(bagList) {
+function calc() {
   let resultOne = 0;
   let resultTwo = 0;
 
   let colorToCheck = "shiny gold";
-  let containsCount = 0;
-  bagList.forEach((bag) => {
-    if (containsColor(bag, colorToCheck)) {
-      containsCount++;
-    }
-  });
-  console.log(containsCount);
+  var containsCorrectColor = [];
+  containsCorrectColor = checkAllBagsForColor(colorToCheck, containsCorrectColor);
+  resultOne = containsCorrectColor.length;
 
   resultOneElement.innerHTML = resultOne;
   resultTwoElement.innerHTML = resultTwo;
 }
 
-function containsColor(bag, colorToCheck) {
-  let canContainColor = false;
-  bag.contain.forEach((c) => {
-    if (c.color === colorToCheck) canContainColor = true;
+function checkAllBagsForColor(colorToCheck, containsCorrectColor) {
+  input.forEach((bag) => {
+    bag.contain.forEach((b) => {
+      let colorMatch = b.color === colorToCheck;
+      let notAlreadyInList = !containsCorrectColor.includes(bag.color);
+      if (colorMatch && notAlreadyInList) {
+        containsCorrectColor.push(bag.color);
+        containsCorrectColor = checkAllBagsForColor(bag.color, containsCorrectColor);
+      }
+    });
   });
-  return canContainColor;
+  return containsCorrectColor;
 }
 
-calc(inputTest);
+function log(string) {
+  // console.log(string);
+}
+
+calc();
 
 // calc(input);
