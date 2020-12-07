@@ -1,55 +1,55 @@
 const inputTest = [
   {
     color: "light red",
-    contain: [
+    content: [
       { count: 1, color: "bright white" },
       { count: 2, color: "muted yellow" },
     ],
   },
   {
     color: "dark orange",
-    contain: [
+    content: [
       { count: 3, color: "bright white" },
       { count: 4, color: "muted yellow" },
     ],
   },
-  { color: "bright white", contain: [{ count: 1, color: "shiny gold" }] },
+  { color: "bright white", content: [{ count: 1, color: "shiny gold" }] },
   {
     color: "muted yellow",
-    contain: [
+    content: [
       { count: 2, color: "shiny gold" },
       { count: 9, color: "faded blue" },
     ],
   },
   {
     color: "shiny gold",
-    contain: [
+    content: [
       { count: 1, color: "dark olive" },
       { count: 2, color: "vibrant plum" },
     ],
   },
   {
     color: "dark olive",
-    contain: [
+    content: [
       { count: 3, color: "faded blue" },
       { count: 4, color: "dotted black" },
     ],
   },
   {
     color: "vibrant plum",
-    contain: [
+    content: [
       { count: 5, color: "faded blue" },
       { count: 6, color: "dotted black" },
     ],
   },
-  { color: "faded blue", contain: [] },
-  { color: "dotted black", contain: [] },
+  { color: "faded blue", content: [] },
+  { color: "dotted black", content: [] },
 ];
 
 const input = [
   {
     color: "posh teal",
-    contain: [
+    content: [
       { count: 2, color: "faded coral" },
       { count: 3, color: "striped crimson" },
       { count: 1, color: "faded red" },
@@ -57,16 +57,16 @@ const input = [
   },
   {
     color: "mirrored chartreuse",
-    contain: [
+    content: [
       { count: 3, color: "clear beige" },
       { count: 3, color: "shiny silver" },
       { count: 3, color: "bright green" },
     ],
   },
-  { color: "dotted red", contain: [{ count: 4, color: "light chartreuse" }] },
+  { color: "dotted red", content: [{ count: 4, color: "light chartreuse" }] },
   {
     color: "faded chartreuse",
-    contain: [
+    content: [
       { count: 1, color: "striped black" },
       { count: 1, color: "dim coral" },
       { count: 5, color: "mirrored maroon" },
@@ -74,7 +74,7 @@ const input = [
   },
   {
     color: "bright teal",
-    contain: [
+    content: [
       { count: 3, color: "light black" },
       { count: 4, color: "striped fuchsia" },
       { count: 1, color: "dark chartreuse" },
@@ -82,7 +82,7 @@ const input = [
   },
   {
     color: "dull orange",
-    contain: [
+    content: [
       { count: 5, color: "striped green" },
       { count: 3, color: "plaid plum" },
       { count: 3, color: "pale gray" },
@@ -90,7 +90,7 @@ const input = [
   },
   {
     color: "dotted tomato",
-    contain: [
+    content: [
       { count: 5, color: "plaid blue" },
       { count: 2, color: "dull maroon" },
       { count: 1, color: "mirrored maroon" },
@@ -99,36 +99,36 @@ const input = [
   },
   {
     color: "drab tan",
-    contain: [
+    content: [
       { count: 1, color: "striped chartreuse" },
       { count: 5, color: "dull lavender" },
     ],
   },
   {
     color: "mirrored indigo",
-    contain: [
+    content: [
       { count: 3, color: "mirrored fuchsia" },
       { count: 2, color: "striped green" },
     ],
   },
   {
     color: "bright white",
-    contain: [
+    content: [
       { count: 2, color: "dark green" },
       { count: 4, color: "bright yellow" },
     ],
   },
   {
     color: "dotted cyan",
-    contain: [
+    content: [
       { count: 1, color: "posh orange" },
       { count: 2, color: "faded white" },
     ],
   },
-  { color: "vibrant orange", contain: [{ count: 1, color: "faded silver" }] },
+  { color: "vibrant orange", content: [{ count: 1, color: "faded silver" }] },
   {
     color: "plaid lime",
-    contain: [
+    content: [
       { count: 4, color: "shiny olive" },
       { count: 5, color: "dim olive" },
       { count: 1, color: "dotted gray" },
@@ -137,7 +137,7 @@ const input = [
   },
   {
     color: "pale green",
-    contain: [
+    content: [
       { count: 2, color: "plaid silver" },
       { count: 5, color: "dark blue" },
       { count: 1, color: "muted blue" },
@@ -146,7 +146,7 @@ const input = [
   },
   {
     color: "dotted brown",
-    contain: [
+    content: [
       { count: 3, color: "dark bronze" },
       { count: 5, color: "posh fuchsia" },
       { count: 3, color: "plaid cyan" },
@@ -154,7 +154,7 @@ const input = [
   },
   {
     color: "muted yellow",
-    contain: [
+    content: [
       { count: 2, color: "vibrant fuchsia" },
       { count: 4, color: "striped brown" },
       { count: 3, color: "muted tan" },
@@ -163,26 +163,26 @@ const input = [
   },
   {
     color: "light crimson",
-    contain: [
+    content: [
       { count: 3, color: "bright lavender" },
       { count: 1, color: "shiny olive" },
     ],
   },
   {
     color: "striped black",
-    contain: [
+    content: [
       { count: 2, color: "drab aqua" },
       { count: 1, color: "clear black" },
       { count: 5, color: "mirrored teal" },
       { count: 3, color: "dark chartreuse" },
     ],
   },
-  { color: "faded olive", contain: [{ count: 2, color: "drab aqua" }] },
-  { color: "clear black", contain: [] },
-  { color: "dark coral", contain: [{ count: 4, color: "drab magenta" }] },
+  { color: "faded olive", content: [{ count: 2, color: "drab aqua" }] },
+  { color: "clear black", content: [] },
+  { color: "dark coral", content: [{ count: 4, color: "drab magenta" }] },
   {
     color: "striped brown",
-    contain: [
+    content: [
       { count: 1, color: "bright lavender" },
       { count: 1, color: "wavy lime" },
       { count: 2, color: "dark chartreuse" },
@@ -191,40 +191,40 @@ const input = [
   },
   {
     color: "dull blue",
-    contain: [
+    content: [
       { count: 5, color: "plaid purple" },
       { count: 1, color: "drab chartreuse" },
     ],
   },
   {
     color: "dark indigo",
-    contain: [
+    content: [
       { count: 5, color: "vibrant white" },
       { count: 3, color: "bright lavender" },
       { count: 1, color: "bright tan" },
       { count: 4, color: "drab aqua" },
     ],
   },
-  { color: "shiny tomato", contain: [{ count: 1, color: "dark chartreuse" }] },
+  { color: "shiny tomato", content: [{ count: 1, color: "dark chartreuse" }] },
   {
     color: "plaid maroon",
-    contain: [
+    content: [
       { count: 5, color: "striped black" },
       { count: 5, color: "drab green" },
     ],
   },
   {
     color: "plaid brown",
-    contain: [
+    content: [
       { count: 5, color: "plaid indigo" },
       { count: 5, color: "shiny gray" },
     ],
   },
-  { color: "dark yellow", contain: [{ count: 2, color: "vibrant cyan" }] },
-  { color: "bright maroon", contain: [{ count: 4, color: "shiny beige" }] },
+  { color: "dark yellow", content: [{ count: 2, color: "vibrant cyan" }] },
+  { color: "bright maroon", content: [{ count: 4, color: "shiny beige" }] },
   {
     color: "muted maroon",
-    contain: [
+    content: [
       { count: 3, color: "striped bronze" },
       { count: 4, color: "clear gold" },
       { count: 1, color: "light red" },
@@ -232,14 +232,14 @@ const input = [
   },
   {
     color: "plaid purple",
-    contain: [
+    content: [
       { count: 1, color: "faded magenta" },
       { count: 5, color: "dotted turquoise" },
     ],
   },
   {
     color: "wavy chartreuse",
-    contain: [
+    content: [
       { count: 2, color: "clear purple" },
       { count: 2, color: "drab green" },
       { count: 3, color: "wavy maroon" },
@@ -247,24 +247,24 @@ const input = [
   },
   {
     color: "posh indigo",
-    contain: [
+    content: [
       { count: 3, color: "striped crimson" },
       { count: 5, color: "mirrored maroon" },
       { count: 1, color: "mirrored crimson" },
       { count: 2, color: "drab orange" },
     ],
   },
-  { color: "drab black", contain: [{ count: 1, color: "drab plum" }] },
+  { color: "drab black", content: [{ count: 1, color: "drab plum" }] },
   {
     color: "striped gray",
-    contain: [
+    content: [
       { count: 5, color: "shiny teal" },
       { count: 2, color: "vibrant magenta" },
     ],
   },
   {
     color: "light yellow",
-    contain: [
+    content: [
       { count: 4, color: "clear black" },
       { count: 2, color: "dim olive" },
       { count: 5, color: "wavy lavender" },
@@ -273,7 +273,7 @@ const input = [
   },
   {
     color: "faded tomato",
-    contain: [
+    content: [
       { count: 3, color: "dark aqua" },
       { count: 3, color: "pale turquoise" },
       { count: 4, color: "pale purple" },
@@ -282,16 +282,16 @@ const input = [
   },
   {
     color: "posh crimson",
-    contain: [
+    content: [
       { count: 1, color: "drab green" },
       { count: 3, color: "dim aqua" },
     ],
   },
-  { color: "muted tomato", contain: [{ count: 1, color: "dim orange" }] },
-  { color: "bright indigo", contain: [{ count: 1, color: "posh brown" }] },
+  { color: "muted tomato", content: [{ count: 1, color: "dim orange" }] },
+  { color: "bright indigo", content: [{ count: 1, color: "posh brown" }] },
   {
     color: "dotted silver",
-    contain: [
+    content: [
       { count: 4, color: "vibrant teal" },
       { count: 3, color: "wavy violet" },
       { count: 4, color: "dark black" },
@@ -300,7 +300,7 @@ const input = [
   },
   {
     color: "dark fuchsia",
-    contain: [
+    content: [
       { count: 3, color: "vibrant salmon" },
       { count: 3, color: "dotted gray" },
       { count: 2, color: "dull chartreuse" },
@@ -308,7 +308,7 @@ const input = [
   },
   {
     color: "dull indigo",
-    contain: [
+    content: [
       { count: 5, color: "dark gold" },
       { count: 1, color: "light crimson" },
       { count: 2, color: "light bronze" },
@@ -317,7 +317,7 @@ const input = [
   },
   {
     color: "light gold",
-    contain: [
+    content: [
       { count: 1, color: "plaid indigo" },
       { count: 1, color: "mirrored crimson" },
       { count: 1, color: "dull indigo" },
@@ -325,7 +325,7 @@ const input = [
   },
   {
     color: "dark cyan",
-    contain: [
+    content: [
       { count: 2, color: "dull brown" },
       { count: 5, color: "bright fuchsia" },
       { count: 3, color: "striped purple" },
@@ -333,14 +333,14 @@ const input = [
   },
   {
     color: "posh chartreuse",
-    contain: [
+    content: [
       { count: 1, color: "light gray" },
       { count: 5, color: "wavy tomato" },
     ],
   },
   {
     color: "bright gold",
-    contain: [
+    content: [
       { count: 1, color: "clear teal" },
       { count: 1, color: "dim purple" },
       { count: 5, color: "striped bronze" },
@@ -348,7 +348,7 @@ const input = [
   },
   {
     color: "striped magenta",
-    contain: [
+    content: [
       { count: 5, color: "vibrant chartreuse" },
       { count: 3, color: "wavy olive" },
       { count: 5, color: "mirrored orange" },
@@ -356,16 +356,16 @@ const input = [
   },
   {
     color: "mirrored gold",
-    contain: [
+    content: [
       { count: 2, color: "striped fuchsia" },
       { count: 5, color: "wavy yellow" },
       { count: 5, color: "dull lime" },
     ],
   },
-  { color: "dark chartreuse", contain: [] },
+  { color: "dark chartreuse", content: [] },
   {
     color: "dim bronze",
-    contain: [
+    content: [
       { count: 3, color: "dim coral" },
       { count: 1, color: "light plum" },
       { count: 1, color: "posh orange" },
@@ -373,7 +373,7 @@ const input = [
   },
   {
     color: "dim coral",
-    contain: [
+    content: [
       { count: 3, color: "shiny teal" },
       { count: 5, color: "plaid bronze" },
       { count: 1, color: "vibrant magenta" },
@@ -382,7 +382,7 @@ const input = [
   },
   {
     color: "bright lavender",
-    contain: [
+    content: [
       { count: 4, color: "bright indigo" },
       { count: 4, color: "faded yellow" },
       { count: 5, color: "posh black" },
@@ -390,7 +390,7 @@ const input = [
   },
   {
     color: "posh cyan",
-    contain: [
+    content: [
       { count: 1, color: "dotted violet" },
       { count: 1, color: "shiny violet" },
       { count: 2, color: "dull chartreuse" },
@@ -399,7 +399,7 @@ const input = [
   },
   {
     color: "wavy lavender",
-    contain: [
+    content: [
       { count: 2, color: "dim fuchsia" },
       { count: 1, color: "dotted red" },
       { count: 5, color: "clear maroon" },
@@ -408,14 +408,14 @@ const input = [
   },
   {
     color: "vibrant salmon",
-    contain: [
+    content: [
       { count: 4, color: "posh indigo" },
       { count: 2, color: "faded tomato" },
     ],
   },
   {
     color: "clear gray",
-    contain: [
+    content: [
       { count: 5, color: "dim olive" },
       { count: 1, color: "striped turquoise" },
       { count: 4, color: "striped tan" },
@@ -424,7 +424,7 @@ const input = [
   },
   {
     color: "bright cyan",
-    contain: [
+    content: [
       { count: 1, color: "pale turquoise" },
       { count: 4, color: "vibrant white" },
       { count: 4, color: "muted gray" },
@@ -433,17 +433,17 @@ const input = [
   },
   {
     color: "posh purple",
-    contain: [
+    content: [
       { count: 1, color: "striped tan" },
       { count: 1, color: "dim aqua" },
       { count: 4, color: "light bronze" },
       { count: 1, color: "bright chartreuse" },
     ],
   },
-  { color: "dim yellow", contain: [{ count: 1, color: "posh lavender" }] },
+  { color: "dim yellow", content: [{ count: 1, color: "posh lavender" }] },
   {
     color: "dim blue",
-    contain: [
+    content: [
       { count: 4, color: "light indigo" },
       { count: 5, color: "shiny fuchsia" },
       { count: 5, color: "drab fuchsia" },
@@ -452,7 +452,7 @@ const input = [
   },
   {
     color: "wavy cyan",
-    contain: [
+    content: [
       { count: 3, color: "clear beige" },
       { count: 4, color: "striped blue" },
       { count: 2, color: "faded coral" },
@@ -460,7 +460,7 @@ const input = [
   },
   {
     color: "mirrored orange",
-    contain: [
+    content: [
       { count: 5, color: "dark bronze" },
       { count: 3, color: "striped blue" },
       { count: 2, color: "posh orange" },
@@ -468,7 +468,7 @@ const input = [
   },
   {
     color: "muted orange",
-    contain: [
+    content: [
       { count: 5, color: "dotted violet" },
       { count: 5, color: "bright violet" },
       { count: 2, color: "vibrant salmon" },
@@ -476,7 +476,7 @@ const input = [
   },
   {
     color: "vibrant coral",
-    contain: [
+    content: [
       { count: 5, color: "bright cyan" },
       { count: 5, color: "shiny indigo" },
       { count: 2, color: "bright bronze" },
@@ -484,16 +484,16 @@ const input = [
   },
   {
     color: "bright gray",
-    contain: [
+    content: [
       { count: 1, color: "clear red" },
       { count: 5, color: "dull orange" },
       { count: 4, color: "bright cyan" },
     ],
   },
-  { color: "muted bronze", contain: [{ count: 4, color: "dim lavender" }] },
+  { color: "muted bronze", content: [{ count: 4, color: "dim lavender" }] },
   {
     color: "shiny blue",
-    contain: [
+    content: [
       { count: 2, color: "dim chartreuse" },
       { count: 3, color: "muted beige" },
       { count: 5, color: "mirrored plum" },
@@ -501,14 +501,14 @@ const input = [
   },
   {
     color: "posh bronze",
-    contain: [
+    content: [
       { count: 3, color: "dull purple" },
       { count: 4, color: "wavy magenta" },
     ],
   },
   {
     color: "faded magenta",
-    contain: [
+    content: [
       { count: 5, color: "clear tomato" },
       { count: 5, color: "dull plum" },
       { count: 4, color: "light red" },
@@ -516,22 +516,22 @@ const input = [
   },
   {
     color: "posh tan",
-    contain: [
+    content: [
       { count: 3, color: "clear olive" },
       { count: 4, color: "clear lavender" },
     ],
   },
-  { color: "muted teal", contain: [{ count: 1, color: "striped magenta" }] },
+  { color: "muted teal", content: [{ count: 1, color: "striped magenta" }] },
   {
     color: "dull brown",
-    contain: [
+    content: [
       { count: 2, color: "drab black" },
       { count: 3, color: "striped bronze" },
     ],
   },
   {
     color: "shiny white",
-    contain: [
+    content: [
       { count: 3, color: "faded blue" },
       { count: 3, color: "dotted salmon" },
       { count: 2, color: "drab black" },
@@ -539,7 +539,7 @@ const input = [
   },
   {
     color: "wavy red",
-    contain: [
+    content: [
       { count: 4, color: "vibrant magenta" },
       { count: 3, color: "muted green" },
       { count: 4, color: "mirrored teal" },
@@ -547,7 +547,7 @@ const input = [
   },
   {
     color: "dim silver",
-    contain: [
+    content: [
       { count: 3, color: "striped purple" },
       { count: 5, color: "drab violet" },
       { count: 2, color: "striped bronze" },
@@ -556,28 +556,28 @@ const input = [
   },
   {
     color: "dull magenta",
-    contain: [
+    content: [
       { count: 1, color: "dim crimson" },
       { count: 1, color: "light aqua" },
     ],
   },
   {
     color: "dull plum",
-    contain: [
+    content: [
       { count: 5, color: "dim indigo" },
       { count: 2, color: "dotted red" },
     ],
   },
   {
     color: "mirrored lime",
-    contain: [
+    content: [
       { count: 3, color: "bright tan" },
       { count: 3, color: "bright orange" },
     ],
   },
   {
     color: "muted green",
-    contain: [
+    content: [
       { count: 3, color: "faded yellow" },
       { count: 2, color: "drab maroon" },
       { count: 1, color: "dark chartreuse" },
@@ -586,32 +586,32 @@ const input = [
   },
   {
     color: "clear crimson",
-    contain: [
+    content: [
       { count: 4, color: "posh fuchsia" },
       { count: 2, color: "dull aqua" },
       { count: 3, color: "faded tan" },
     ],
   },
-  { color: "drab aqua", contain: [] },
+  { color: "drab aqua", content: [] },
   {
     color: "dull chartreuse",
-    contain: [
+    content: [
       { count: 4, color: "dotted gray" },
       { count: 2, color: "dim red" },
       { count: 3, color: "dull yellow" },
     ],
   },
-  { color: "posh aqua", contain: [{ count: 5, color: "striped orange" }] },
+  { color: "posh aqua", content: [{ count: 5, color: "striped orange" }] },
   {
     color: "dark blue",
-    contain: [
+    content: [
       { count: 2, color: "dark gold" },
       { count: 2, color: "faded yellow" },
     ],
   },
   {
     color: "posh red",
-    contain: [
+    content: [
       { count: 2, color: "mirrored brown" },
       { count: 4, color: "shiny orange" },
       { count: 4, color: "striped lavender" },
@@ -620,26 +620,26 @@ const input = [
   },
   {
     color: "dim lime",
-    contain: [
+    content: [
       { count: 1, color: "muted turquoise" },
       { count: 2, color: "posh gold" },
       { count: 2, color: "dull violet" },
       { count: 3, color: "dotted lavender" },
     ],
   },
-  { color: "faded yellow", contain: [] },
+  { color: "faded yellow", content: [] },
   {
     color: "dark red",
-    contain: [
+    content: [
       { count: 2, color: "posh beige" },
       { count: 3, color: "shiny tomato" },
       { count: 3, color: "light salmon" },
     ],
   },
-  { color: "dull purple", contain: [{ count: 3, color: "bright red" }] },
+  { color: "dull purple", content: [{ count: 3, color: "bright red" }] },
   {
     color: "dark violet",
-    contain: [
+    content: [
       { count: 4, color: "clear salmon" },
       { count: 2, color: "dark gold" },
       { count: 1, color: "dotted cyan" },
@@ -648,7 +648,7 @@ const input = [
   },
   {
     color: "muted indigo",
-    contain: [
+    content: [
       { count: 5, color: "striped bronze" },
       { count: 4, color: "posh olive" },
       { count: 5, color: "striped purple" },
@@ -656,18 +656,18 @@ const input = [
   },
   {
     color: "plaid crimson",
-    contain: [
+    content: [
       { count: 1, color: "bright violet" },
       { count: 3, color: "bright red" },
       { count: 5, color: "clear orange" },
       { count: 2, color: "dark purple" },
     ],
   },
-  { color: "muted silver", contain: [{ count: 1, color: "clear tomato" }] },
-  { color: "dull black", contain: [{ count: 4, color: "striped gold" }] },
+  { color: "muted silver", content: [{ count: 1, color: "clear tomato" }] },
+  { color: "dull black", content: [{ count: 4, color: "striped gold" }] },
   {
     color: "faded red",
-    contain: [
+    content: [
       { count: 1, color: "posh indigo" },
       { count: 2, color: "striped crimson" },
       { count: 3, color: "muted indigo" },
@@ -675,32 +675,32 @@ const input = [
   },
   {
     color: "muted lime",
-    contain: [
+    content: [
       { count: 5, color: "plaid lavender" },
       { count: 4, color: "dim fuchsia" },
     ],
   },
   {
     color: "mirrored crimson",
-    contain: [
+    content: [
       { count: 4, color: "light bronze" },
       { count: 1, color: "wavy red" },
       { count: 4, color: "drab violet" },
       { count: 4, color: "faded white" },
     ],
   },
-  { color: "posh gray", contain: [{ count: 3, color: "dim olive" }] },
+  { color: "posh gray", content: [{ count: 3, color: "dim olive" }] },
   {
     color: "posh violet",
-    contain: [
+    content: [
       { count: 4, color: "mirrored white" },
       { count: 4, color: "dim indigo" },
     ],
   },
-  { color: "plaid black", contain: [{ count: 5, color: "bright purple" }] },
+  { color: "plaid black", content: [{ count: 5, color: "bright purple" }] },
   {
     color: "vibrant indigo",
-    contain: [
+    content: [
       { count: 3, color: "mirrored blue" },
       { count: 4, color: "dim teal" },
       { count: 2, color: "dim beige" },
@@ -709,72 +709,72 @@ const input = [
   },
   {
     color: "mirrored beige",
-    contain: [
+    content: [
       { count: 3, color: "plaid tomato" },
       { count: 5, color: "faded black" },
       { count: 3, color: "vibrant aqua" },
       { count: 4, color: "striped coral" },
     ],
   },
-  { color: "pale turquoise", contain: [{ count: 2, color: "faded beige" }] },
+  { color: "pale turquoise", content: [{ count: 2, color: "faded beige" }] },
   {
     color: "striped tomato",
-    contain: [
+    content: [
       { count: 5, color: "dull indigo" },
       { count: 2, color: "dull plum" },
     ],
   },
   {
     color: "muted black",
-    contain: [
+    content: [
       { count: 3, color: "faded plum" },
       { count: 5, color: "vibrant tan" },
     ],
   },
   {
     color: "dark crimson",
-    contain: [
+    content: [
       { count: 2, color: "muted black" },
       { count: 2, color: "faded gray" },
     ],
   },
   {
     color: "dark turquoise",
-    contain: [
+    content: [
       { count: 3, color: "posh olive" },
       { count: 1, color: "striped crimson" },
     ],
   },
   {
     color: "faded crimson",
-    contain: [
+    content: [
       { count: 1, color: "posh tomato" },
       { count: 2, color: "dotted tomato" },
       { count: 1, color: "shiny lime" },
     ],
   },
-  { color: "mirrored yellow", contain: [{ count: 2, color: "wavy gold" }] },
+  { color: "mirrored yellow", content: [{ count: 2, color: "wavy gold" }] },
   {
     color: "dull silver",
-    contain: [
+    content: [
       { count: 5, color: "plaid blue" },
       { count: 4, color: "faded green" },
     ],
   },
   {
     color: "pale salmon",
-    contain: [
+    content: [
       { count: 1, color: "clear fuchsia" },
       { count: 3, color: "muted white" },
       { count: 4, color: "pale violet" },
       { count: 2, color: "vibrant yellow" },
     ],
   },
-  { color: "pale plum", contain: [{ count: 3, color: "faded green" }] },
-  { color: "shiny turquoise", contain: [{ count: 4, color: "shiny maroon" }] },
+  { color: "pale plum", content: [{ count: 3, color: "faded green" }] },
+  { color: "shiny turquoise", content: [{ count: 4, color: "shiny maroon" }] },
   {
     color: "plaid magenta",
-    contain: [
+    content: [
       { count: 5, color: "posh salmon" },
       { count: 4, color: "muted tan" },
       { count: 3, color: "light silver" },
@@ -782,7 +782,7 @@ const input = [
   },
   {
     color: "mirrored black",
-    contain: [
+    content: [
       { count: 1, color: "pale plum" },
       { count: 5, color: "wavy gold" },
       { count: 1, color: "mirrored magenta" },
@@ -791,7 +791,7 @@ const input = [
   },
   {
     color: "mirrored magenta",
-    contain: [
+    content: [
       { count: 4, color: "clear beige" },
       { count: 2, color: "plaid indigo" },
       { count: 4, color: "faded coral" },
@@ -800,7 +800,7 @@ const input = [
   },
   {
     color: "striped lime",
-    contain: [
+    content: [
       { count: 5, color: "muted white" },
       { count: 4, color: "faded tan" },
       { count: 1, color: "dull plum" },
@@ -808,7 +808,7 @@ const input = [
   },
   {
     color: "pale coral",
-    contain: [
+    content: [
       { count: 2, color: "posh coral" },
       { count: 2, color: "mirrored turquoise" },
       { count: 4, color: "clear yellow" },
@@ -817,7 +817,7 @@ const input = [
   },
   {
     color: "dotted gray",
-    contain: [
+    content: [
       { count: 2, color: "drab aqua" },
       { count: 1, color: "faded coral" },
       { count: 3, color: "clear black" },
@@ -825,7 +825,7 @@ const input = [
   },
   {
     color: "faded tan",
-    contain: [
+    content: [
       { count: 1, color: "shiny salmon" },
       { count: 5, color: "drab plum" },
       { count: 2, color: "dotted lavender" },
@@ -834,35 +834,35 @@ const input = [
   },
   {
     color: "dull aqua",
-    contain: [
+    content: [
       { count: 2, color: "faded black" },
       { count: 5, color: "bright indigo" },
     ],
   },
   {
     color: "dotted violet",
-    contain: [
+    content: [
       { count: 2, color: "posh green" },
       { count: 3, color: "plaid lime" },
     ],
   },
   {
     color: "faded aqua",
-    contain: [
+    content: [
       { count: 3, color: "clear gold" },
       { count: 3, color: "striped bronze" },
     ],
   },
   {
     color: "vibrant yellow",
-    contain: [
+    content: [
       { count: 4, color: "pale magenta" },
       { count: 2, color: "pale black" },
     ],
   },
   {
     color: "posh silver",
-    contain: [
+    content: [
       { count: 3, color: "shiny black" },
       { count: 2, color: "dull purple" },
       { count: 1, color: "light lime" },
@@ -871,14 +871,14 @@ const input = [
   },
   {
     color: "vibrant purple",
-    contain: [
+    content: [
       { count: 5, color: "pale olive" },
       { count: 3, color: "muted bronze" },
     ],
   },
   {
     color: "drab orange",
-    contain: [
+    content: [
       { count: 4, color: "dark aqua" },
       { count: 3, color: "posh black" },
       { count: 4, color: "shiny beige" },
@@ -886,17 +886,17 @@ const input = [
   },
   {
     color: "clear green",
-    contain: [
+    content: [
       { count: 1, color: "dark lime" },
       { count: 2, color: "bright orange" },
       { count: 2, color: "mirrored maroon" },
       { count: 3, color: "dark bronze" },
     ],
   },
-  { color: "dark tomato", contain: [{ count: 2, color: "drab yellow" }] },
+  { color: "dark tomato", content: [{ count: 2, color: "drab yellow" }] },
   {
     color: "clear blue",
-    contain: [
+    content: [
       { count: 3, color: "pale bronze" },
       { count: 3, color: "drab aqua" },
       { count: 3, color: "striped tan" },
@@ -905,67 +905,67 @@ const input = [
   },
   {
     color: "muted red",
-    contain: [
+    content: [
       { count: 3, color: "dark olive" },
       { count: 3, color: "faded teal" },
     ],
   },
   {
     color: "wavy olive",
-    contain: [
+    content: [
       { count: 5, color: "faded chartreuse" },
       { count: 2, color: "striped black" },
     ],
   },
   {
     color: "pale red",
-    contain: [
+    content: [
       { count: 4, color: "bright orange" },
       { count: 5, color: "drab orange" },
       { count: 2, color: "striped brown" },
       { count: 2, color: "striped bronze" },
     ],
   },
-  { color: "dim brown", contain: [{ count: 1, color: "posh purple" }] },
+  { color: "dim brown", content: [{ count: 1, color: "posh purple" }] },
   {
     color: "dotted lavender",
-    contain: [
+    content: [
       { count: 2, color: "bright chartreuse" },
       { count: 2, color: "pale gray" },
     ],
   },
   {
     color: "clear aqua",
-    contain: [
+    content: [
       { count: 1, color: "vibrant plum" },
       { count: 5, color: "dark plum" },
     ],
   },
-  { color: "wavy fuchsia", contain: [{ count: 1, color: "pale purple" }] },
+  { color: "wavy fuchsia", content: [{ count: 1, color: "pale purple" }] },
   {
     color: "dim tomato",
-    contain: [
+    content: [
       { count: 2, color: "faded red" },
       { count: 3, color: "clear teal" },
       { count: 4, color: "striped chartreuse" },
       { count: 4, color: "shiny green" },
     ],
   },
-  { color: "striped maroon", contain: [{ count: 4, color: "posh coral" }] },
+  { color: "striped maroon", content: [{ count: 4, color: "posh coral" }] },
   {
     color: "bright yellow",
-    contain: [
+    content: [
       { count: 4, color: "dark tomato" },
       { count: 3, color: "pale gold" },
       { count: 4, color: "dark gold" },
       { count: 5, color: "shiny tomato" },
     ],
   },
-  { color: "pale maroon", contain: [{ count: 3, color: "posh cyan" }] },
-  { color: "clear lime", contain: [{ count: 4, color: "faded coral" }] },
+  { color: "pale maroon", content: [{ count: 3, color: "posh cyan" }] },
+  { color: "clear lime", content: [{ count: 4, color: "faded coral" }] },
   {
     color: "light violet",
-    contain: [
+    content: [
       { count: 4, color: "vibrant magenta" },
       { count: 3, color: "bright yellow" },
       { count: 3, color: "dull chartreuse" },
@@ -973,7 +973,7 @@ const input = [
   },
   {
     color: "dotted maroon",
-    contain: [
+    content: [
       { count: 5, color: "mirrored salmon" },
       { count: 1, color: "striped tomato" },
       { count: 5, color: "dim coral" },
@@ -981,15 +981,15 @@ const input = [
   },
   {
     color: "pale violet",
-    contain: [
+    content: [
       { count: 1, color: "dotted tan" },
       { count: 2, color: "wavy white" },
     ],
   },
-  { color: "clear salmon", contain: [] },
+  { color: "clear salmon", content: [] },
   {
     color: "dotted tan",
-    contain: [
+    content: [
       { count: 3, color: "posh beige" },
       { count: 4, color: "bright chartreuse" },
       { count: 5, color: "posh fuchsia" },
@@ -998,38 +998,38 @@ const input = [
   },
   {
     color: "vibrant tan",
-    contain: [
+    content: [
       { count: 4, color: "dark plum" },
       { count: 3, color: "clear teal" },
       { count: 2, color: "faded yellow" },
       { count: 3, color: "light chartreuse" },
     ],
   },
-  { color: "pale lime", contain: [{ count: 4, color: "muted crimson" }] },
+  { color: "pale lime", content: [{ count: 4, color: "muted crimson" }] },
   {
     color: "muted blue",
-    contain: [
+    content: [
       { count: 2, color: "light salmon" },
       { count: 1, color: "bright aqua" },
     ],
   },
   {
     color: "plaid silver",
-    contain: [
+    content: [
       { count: 5, color: "striped magenta" },
       { count: 2, color: "dull chartreuse" },
     ],
   },
   {
     color: "clear gold",
-    contain: [
+    content: [
       { count: 5, color: "shiny gray" },
       { count: 2, color: "vibrant white" },
     ],
   },
   {
     color: "dim salmon",
-    contain: [
+    content: [
       { count: 3, color: "striped olive" },
       { count: 1, color: "faded teal" },
       { count: 3, color: "posh gold" },
@@ -1037,17 +1037,17 @@ const input = [
   },
   {
     color: "muted gold",
-    contain: [
+    content: [
       { count: 5, color: "shiny lavender" },
       { count: 5, color: "bright orange" },
       { count: 3, color: "dark lime" },
       { count: 2, color: "dim blue" },
     ],
   },
-  { color: "dotted orange", contain: [{ count: 4, color: "muted lavender" }] },
+  { color: "dotted orange", content: [{ count: 4, color: "muted lavender" }] },
   {
     color: "plaid yellow",
-    contain: [
+    content: [
       { count: 2, color: "posh green" },
       { count: 5, color: "faded white" },
       { count: 5, color: "plaid blue" },
@@ -1055,15 +1055,15 @@ const input = [
   },
   {
     color: "posh yellow",
-    contain: [
+    content: [
       { count: 2, color: "shiny lime" },
       { count: 2, color: "mirrored cyan" },
     ],
   },
-  { color: "wavy lime", contain: [{ count: 3, color: "vibrant plum" }] },
+  { color: "wavy lime", content: [{ count: 3, color: "vibrant plum" }] },
   {
     color: "clear teal",
-    contain: [
+    content: [
       { count: 3, color: "mirrored blue" },
       { count: 3, color: "posh maroon" },
       { count: 2, color: "muted cyan" },
@@ -1072,7 +1072,7 @@ const input = [
   },
   {
     color: "faded maroon",
-    contain: [
+    content: [
       { count: 1, color: "dull magenta" },
       { count: 3, color: "dull green" },
       { count: 3, color: "muted coral" },
@@ -1081,14 +1081,14 @@ const input = [
   },
   {
     color: "drab salmon",
-    contain: [
+    content: [
       { count: 5, color: "faded tomato" },
       { count: 3, color: "clear green" },
     ],
   },
   {
     color: "pale orange",
-    contain: [
+    content: [
       { count: 4, color: "clear orange" },
       { count: 4, color: "wavy fuchsia" },
       { count: 5, color: "clear cyan" },
@@ -1097,7 +1097,7 @@ const input = [
   },
   {
     color: "clear indigo",
-    contain: [
+    content: [
       { count: 1, color: "shiny gold" },
       { count: 2, color: "light aqua" },
       { count: 2, color: "bright orange" },
@@ -1105,7 +1105,7 @@ const input = [
   },
   {
     color: "faded gold",
-    contain: [
+    content: [
       { count: 1, color: "posh maroon" },
       { count: 3, color: "faded indigo" },
       { count: 5, color: "muted purple" },
@@ -1114,16 +1114,16 @@ const input = [
   },
   {
     color: "drab cyan",
-    contain: [
+    content: [
       { count: 1, color: "wavy white" },
       { count: 3, color: "dotted turquoise" },
     ],
   },
-  { color: "striped blue", contain: [{ count: 3, color: "shiny beige" }] },
-  { color: "vibrant black", contain: [{ count: 3, color: "bright blue" }] },
+  { color: "striped blue", content: [{ count: 3, color: "shiny beige" }] },
+  { color: "vibrant black", content: [{ count: 3, color: "bright blue" }] },
   {
     color: "striped green",
-    contain: [
+    content: [
       { count: 5, color: "shiny orange" },
       { count: 5, color: "muted tomato" },
       { count: 1, color: "clear teal" },
@@ -1131,7 +1131,7 @@ const input = [
   },
   {
     color: "posh maroon",
-    contain: [
+    content: [
       { count: 1, color: "striped purple" },
       { count: 3, color: "striped gray" },
       { count: 1, color: "dark chartreuse" },
@@ -1140,16 +1140,16 @@ const input = [
   },
   {
     color: "dark beige",
-    contain: [
+    content: [
       { count: 3, color: "drab fuchsia" },
       { count: 2, color: "mirrored cyan" },
       { count: 1, color: "striped crimson" },
     ],
   },
-  { color: "wavy crimson", contain: [{ count: 1, color: "mirrored aqua" }] },
+  { color: "wavy crimson", content: [{ count: 1, color: "mirrored aqua" }] },
   {
     color: "striped gold",
-    contain: [
+    content: [
       { count: 1, color: "vibrant tomato" },
       { count: 5, color: "faded aqua" },
       { count: 5, color: "plaid salmon" },
@@ -1158,14 +1158,14 @@ const input = [
   },
   {
     color: "dim plum",
-    contain: [
+    content: [
       { count: 1, color: "posh orange" },
       { count: 4, color: "vibrant chartreuse" },
     ],
   },
   {
     color: "mirrored cyan",
-    contain: [
+    content: [
       { count: 2, color: "vibrant tomato" },
       { count: 4, color: "clear black" },
       { count: 4, color: "striped gold" },
@@ -1173,27 +1173,27 @@ const input = [
   },
   {
     color: "plaid lavender",
-    contain: [
+    content: [
       { count: 4, color: "shiny lime" },
       { count: 4, color: "pale gold" },
       { count: 3, color: "posh teal" },
       { count: 1, color: "dull lavender" },
     ],
   },
-  { color: "wavy magenta", contain: [{ count: 1, color: "dim red" }] },
+  { color: "wavy magenta", content: [{ count: 1, color: "dim red" }] },
   {
     color: "wavy bronze",
-    contain: [
+    content: [
       { count: 4, color: "shiny bronze" },
       { count: 1, color: "drab turquoise" },
       { count: 5, color: "muted tan" },
       { count: 2, color: "dotted aqua" },
     ],
   },
-  { color: "drab coral", contain: [{ count: 3, color: "dim lime" }] },
+  { color: "drab coral", content: [{ count: 3, color: "dim lime" }] },
   {
     color: "dull teal",
-    contain: [
+    content: [
       { count: 1, color: "vibrant aqua" },
       { count: 4, color: "wavy lavender" },
       { count: 1, color: "dark purple" },
@@ -1202,28 +1202,28 @@ const input = [
   },
   {
     color: "faded beige",
-    contain: [
+    content: [
       { count: 5, color: "plaid indigo" },
       { count: 5, color: "clear beige" },
       { count: 5, color: "dull violet" },
     ],
   },
-  { color: "mirrored gray", contain: [{ count: 3, color: "light bronze" }] },
+  { color: "mirrored gray", content: [{ count: 3, color: "light bronze" }] },
   {
     color: "dark green",
-    contain: [
+    content: [
       { count: 1, color: "dark violet" },
       { count: 1, color: "posh black" },
       { count: 4, color: "posh fuchsia" },
       { count: 1, color: "shiny olive" },
     ],
   },
-  { color: "posh coral", contain: [{ count: 1, color: "striped purple" }] },
-  { color: "muted salmon", contain: [{ count: 1, color: "bright orange" }] },
-  { color: "mirrored teal", contain: [] },
+  { color: "posh coral", content: [{ count: 1, color: "striped purple" }] },
+  { color: "muted salmon", content: [{ count: 1, color: "bright orange" }] },
+  { color: "mirrored teal", content: [] },
   {
     color: "dotted turquoise",
-    contain: [
+    content: [
       { count: 5, color: "dark tomato" },
       { count: 1, color: "plaid plum" },
       { count: 2, color: "wavy gold" },
@@ -1231,14 +1231,14 @@ const input = [
   },
   {
     color: "wavy tan",
-    contain: [
+    content: [
       { count: 3, color: "dim cyan" },
       { count: 2, color: "dim maroon" },
     ],
   },
   {
     color: "light tomato",
-    contain: [
+    content: [
       { count: 5, color: "muted cyan" },
       { count: 2, color: "dotted green" },
       { count: 4, color: "dark aqua" },
@@ -1246,7 +1246,7 @@ const input = [
   },
   {
     color: "mirrored green",
-    contain: [
+    content: [
       { count: 5, color: "light tomato" },
       { count: 3, color: "dim magenta" },
       { count: 4, color: "drab maroon" },
@@ -1254,7 +1254,7 @@ const input = [
   },
   {
     color: "bright black",
-    contain: [
+    content: [
       { count: 2, color: "mirrored violet" },
       { count: 3, color: "dull brown" },
       { count: 5, color: "clear gray" },
@@ -1263,21 +1263,21 @@ const input = [
   },
   {
     color: "bright silver",
-    contain: [
+    content: [
       { count: 1, color: "dotted brown" },
       { count: 4, color: "vibrant yellow" },
     ],
   },
   {
     color: "pale black",
-    contain: [
+    content: [
       { count: 5, color: "drab magenta" },
       { count: 5, color: "vibrant magenta" },
     ],
   },
   {
     color: "wavy indigo",
-    contain: [
+    content: [
       { count: 2, color: "dotted green" },
       { count: 1, color: "shiny orange" },
       { count: 1, color: "dark lime" },
@@ -1286,7 +1286,7 @@ const input = [
   },
   {
     color: "shiny fuchsia",
-    contain: [
+    content: [
       { count: 1, color: "muted lavender" },
       { count: 5, color: "posh beige" },
       { count: 3, color: "clear salmon" },
@@ -1295,46 +1295,46 @@ const input = [
   },
   {
     color: "muted white",
-    contain: [
+    content: [
       { count: 4, color: "posh orange" },
       { count: 4, color: "clear orange" },
     ],
   },
   {
     color: "shiny lavender",
-    contain: [
+    content: [
       { count: 3, color: "wavy olive" },
       { count: 3, color: "dull crimson" },
     ],
   },
-  { color: "clear violet", contain: [{ count: 5, color: "shiny plum" }] },
+  { color: "clear violet", content: [{ count: 5, color: "shiny plum" }] },
   {
     color: "striped purple",
-    contain: [
+    content: [
       { count: 2, color: "drab maroon" },
       { count: 2, color: "vibrant magenta" },
       { count: 3, color: "shiny teal" },
     ],
   },
-  { color: "clear tomato", contain: [{ count: 3, color: "posh brown" }] },
+  { color: "clear tomato", content: [{ count: 3, color: "posh brown" }] },
   {
     color: "wavy purple",
-    contain: [
+    content: [
       { count: 4, color: "striped indigo" },
       { count: 5, color: "striped crimson" },
     ],
   },
   {
     color: "dark teal",
-    contain: [
+    content: [
       { count: 2, color: "dim coral" },
       { count: 5, color: "dim fuchsia" },
     ],
   },
-  { color: "drab blue", contain: [{ count: 5, color: "dim indigo" }] },
+  { color: "drab blue", content: [{ count: 5, color: "dim indigo" }] },
   {
     color: "faded gray",
-    contain: [
+    content: [
       { count: 5, color: "dull brown" },
       { count: 5, color: "mirrored brown" },
       { count: 3, color: "shiny magenta" },
@@ -1343,43 +1343,43 @@ const input = [
   },
   {
     color: "faded violet",
-    contain: [
+    content: [
       { count: 3, color: "wavy purple" },
       { count: 2, color: "light maroon" },
     ],
   },
   {
     color: "pale brown",
-    contain: [
+    content: [
       { count: 5, color: "clear red" },
       { count: 2, color: "plaid chartreuse" },
     ],
   },
   {
     color: "faded white",
-    contain: [
+    content: [
       { count: 2, color: "drab maroon" },
       { count: 2, color: "shiny tomato" },
     ],
   },
-  { color: "posh brown", contain: [] },
+  { color: "posh brown", content: [] },
   {
     color: "dotted olive",
-    contain: [
+    content: [
       { count: 3, color: "pale teal" },
       { count: 1, color: "bright purple" },
     ],
   },
   {
     color: "mirrored fuchsia",
-    contain: [
+    content: [
       { count: 1, color: "dull maroon" },
       { count: 5, color: "dull green" },
     ],
   },
   {
     color: "dark orange",
-    contain: [
+    content: [
       { count: 5, color: "striped lavender" },
       { count: 1, color: "posh black" },
       { count: 1, color: "dark purple" },
@@ -1387,18 +1387,18 @@ const input = [
   },
   {
     color: "pale fuchsia",
-    contain: [
+    content: [
       { count: 5, color: "plaid fuchsia" },
       { count: 1, color: "dull lime" },
       { count: 4, color: "pale bronze" },
       { count: 2, color: "bright cyan" },
     ],
   },
-  { color: "light brown", contain: [{ count: 5, color: "vibrant bronze" }] },
-  { color: "faded bronze", contain: [{ count: 4, color: "dim silver" }] },
+  { color: "light brown", content: [{ count: 5, color: "vibrant bronze" }] },
+  { color: "faded bronze", content: [{ count: 4, color: "dim silver" }] },
   {
     color: "vibrant chartreuse",
-    contain: [
+    content: [
       { count: 5, color: "shiny gray" },
       { count: 5, color: "muted lavender" },
       { count: 3, color: "posh fuchsia" },
@@ -1406,7 +1406,7 @@ const input = [
   },
   {
     color: "dim teal",
-    contain: [
+    content: [
       { count: 4, color: "clear red" },
       { count: 2, color: "faded silver" },
       { count: 1, color: "muted blue" },
@@ -1415,18 +1415,18 @@ const input = [
   },
   {
     color: "dotted chartreuse",
-    contain: [
+    content: [
       { count: 4, color: "striped fuchsia" },
       { count: 3, color: "bright lavender" },
       { count: 3, color: "vibrant blue" },
       { count: 4, color: "mirrored maroon" },
     ],
   },
-  { color: "dark purple", contain: [{ count: 2, color: "posh black" }] },
-  { color: "mirrored olive", contain: [{ count: 3, color: "dotted brown" }] },
+  { color: "dark purple", content: [{ count: 2, color: "posh black" }] },
+  { color: "mirrored olive", content: [{ count: 3, color: "dotted brown" }] },
   {
     color: "shiny yellow",
-    contain: [
+    content: [
       { count: 4, color: "mirrored maroon" },
       { count: 3, color: "dark plum" },
       { count: 5, color: "muted green" },
@@ -1435,34 +1435,34 @@ const input = [
   },
   {
     color: "drab turquoise",
-    contain: [
+    content: [
       { count: 3, color: "dim coral" },
       { count: 3, color: "dark chartreuse" },
     ],
   },
   {
     color: "striped orange",
-    contain: [
+    content: [
       { count: 4, color: "striped lime" },
       { count: 1, color: "dim tan" },
       { count: 3, color: "dull yellow" },
       { count: 2, color: "vibrant cyan" },
     ],
   },
-  { color: "dull turquoise", contain: [{ count: 3, color: "clear purple" }] },
+  { color: "dull turquoise", content: [{ count: 3, color: "clear purple" }] },
   {
     color: "muted fuchsia",
-    contain: [
+    content: [
       { count: 2, color: "wavy tomato" },
       { count: 5, color: "dark maroon" },
       { count: 3, color: "muted tomato" },
       { count: 4, color: "vibrant plum" },
     ],
   },
-  { color: "faded coral", contain: [] },
+  { color: "faded coral", content: [] },
   {
     color: "bright red",
-    contain: [
+    content: [
       { count: 1, color: "dull crimson" },
       { count: 5, color: "shiny teal" },
       { count: 4, color: "shiny gold" },
@@ -1470,7 +1470,7 @@ const input = [
   },
   {
     color: "bright purple",
-    contain: [
+    content: [
       { count: 4, color: "plaid indigo" },
       { count: 5, color: "vibrant maroon" },
       { count: 2, color: "dim red" },
@@ -1478,7 +1478,7 @@ const input = [
   },
   {
     color: "light plum",
-    contain: [
+    content: [
       { count: 3, color: "drab aqua" },
       { count: 5, color: "shiny tomato" },
       { count: 4, color: "drab violet" },
@@ -1486,7 +1486,7 @@ const input = [
   },
   {
     color: "faded orange",
-    contain: [
+    content: [
       { count: 2, color: "shiny teal" },
       { count: 5, color: "striped gray" },
       { count: 2, color: "dull lavender" },
@@ -1495,16 +1495,16 @@ const input = [
   },
   {
     color: "drab white",
-    contain: [
+    content: [
       { count: 1, color: "bright orange" },
       { count: 5, color: "drab lime" },
       { count: 5, color: "drab plum" },
     ],
   },
-  { color: "posh lime", contain: [{ count: 3, color: "faded chartreuse" }] },
+  { color: "posh lime", content: [{ count: 3, color: "faded chartreuse" }] },
   {
     color: "vibrant bronze",
-    contain: [
+    content: [
       { count: 3, color: "dim green" },
       { count: 1, color: "clear gold" },
       { count: 4, color: "striped bronze" },
@@ -1513,14 +1513,14 @@ const input = [
   },
   {
     color: "dark olive",
-    contain: [
+    content: [
       { count: 5, color: "dim purple" },
       { count: 5, color: "mirrored maroon" },
     ],
   },
   {
     color: "striped plum",
-    contain: [
+    content: [
       { count: 1, color: "posh brown" },
       { count: 2, color: "muted cyan" },
       { count: 3, color: "faded yellow" },
@@ -1529,24 +1529,24 @@ const input = [
   },
   {
     color: "plaid tan",
-    contain: [
+    content: [
       { count: 2, color: "mirrored lavender" },
       { count: 2, color: "striped silver" },
     ],
   },
   {
     color: "pale chartreuse",
-    contain: [
+    content: [
       { count: 5, color: "clear beige" },
       { count: 5, color: "clear maroon" },
       { count: 4, color: "wavy red" },
       { count: 5, color: "dotted tan" },
     ],
   },
-  { color: "vibrant teal", contain: [{ count: 3, color: "bright violet" }] },
+  { color: "vibrant teal", content: [{ count: 3, color: "bright violet" }] },
   {
     color: "vibrant silver",
-    contain: [
+    content: [
       { count: 1, color: "shiny teal" },
       { count: 2, color: "pale purple" },
       { count: 5, color: "dark lime" },
@@ -1554,7 +1554,7 @@ const input = [
   },
   {
     color: "wavy orange",
-    contain: [
+    content: [
       { count: 5, color: "bright bronze" },
       { count: 4, color: "vibrant aqua" },
       { count: 3, color: "pale indigo" },
@@ -1563,21 +1563,21 @@ const input = [
   },
   {
     color: "plaid tomato",
-    contain: [
+    content: [
       { count: 3, color: "faded teal" },
       { count: 1, color: "dull green" },
     ],
   },
   {
     color: "muted purple",
-    contain: [
+    content: [
       { count: 1, color: "muted lavender" },
       { count: 5, color: "light black" },
     ],
   },
   {
     color: "light red",
-    contain: [
+    content: [
       { count: 3, color: "posh green" },
       { count: 2, color: "striped purple" },
       { count: 1, color: "pale purple" },
@@ -1585,27 +1585,27 @@ const input = [
   },
   {
     color: "shiny magenta",
-    contain: [
+    content: [
       { count: 4, color: "muted silver" },
       { count: 3, color: "drab turquoise" },
       { count: 2, color: "pale turquoise" },
     ],
   },
-  { color: "light tan", contain: [{ count: 5, color: "bright green" }] },
+  { color: "light tan", content: [{ count: 5, color: "bright green" }] },
   {
     color: "clear fuchsia",
-    contain: [
+    content: [
       { count: 5, color: "faded coral" },
       { count: 2, color: "drab plum" },
       { count: 2, color: "clear beige" },
       { count: 1, color: "pale teal" },
     ],
   },
-  { color: "vibrant aqua", contain: [{ count: 3, color: "dim red" }] },
-  { color: "posh tomato", contain: [{ count: 5, color: "wavy magenta" }] },
+  { color: "vibrant aqua", content: [{ count: 3, color: "dim red" }] },
+  { color: "posh tomato", content: [{ count: 5, color: "wavy magenta" }] },
   {
     color: "drab plum",
-    contain: [
+    content: [
       { count: 3, color: "clear salmon" },
       { count: 5, color: "mirrored teal" },
       { count: 4, color: "striped aqua" },
@@ -1613,14 +1613,14 @@ const input = [
   },
   {
     color: "pale lavender",
-    contain: [
+    content: [
       { count: 4, color: "clear black" },
       { count: 4, color: "wavy green" },
     ],
   },
   {
     color: "drab beige",
-    contain: [
+    content: [
       { count: 3, color: "pale teal" },
       { count: 5, color: "mirrored aqua" },
       { count: 4, color: "posh beige" },
@@ -1628,7 +1628,7 @@ const input = [
   },
   {
     color: "shiny aqua",
-    contain: [
+    content: [
       { count: 3, color: "striped black" },
       { count: 4, color: "striped blue" },
       { count: 4, color: "light salmon" },
@@ -1637,26 +1637,26 @@ const input = [
   },
   {
     color: "dull white",
-    contain: [
+    content: [
       { count: 2, color: "faded brown" },
       { count: 3, color: "drab maroon" },
       { count: 5, color: "striped olive" },
       { count: 1, color: "bright fuchsia" },
     ],
   },
-  { color: "vibrant gold", contain: [{ count: 5, color: "dotted aqua" }] },
+  { color: "vibrant gold", content: [{ count: 5, color: "dotted aqua" }] },
   {
     color: "dim turquoise",
-    contain: [
+    content: [
       { count: 2, color: "mirrored turquoise" },
       { count: 4, color: "dark tomato" },
       { count: 4, color: "clear lime" },
     ],
   },
-  { color: "drab silver", contain: [{ count: 3, color: "drab plum" }] },
+  { color: "drab silver", content: [{ count: 3, color: "drab plum" }] },
   {
     color: "plaid plum",
-    contain: [
+    content: [
       { count: 3, color: "shiny gold" },
       { count: 1, color: "wavy red" },
       { count: 1, color: "plaid bronze" },
@@ -1665,7 +1665,7 @@ const input = [
   },
   {
     color: "wavy gray",
-    contain: [
+    content: [
       { count: 2, color: "dim plum" },
       { count: 4, color: "light red" },
       { count: 3, color: "wavy orange" },
@@ -1674,14 +1674,14 @@ const input = [
   },
   {
     color: "mirrored plum",
-    contain: [
+    content: [
       { count: 4, color: "dotted violet" },
       { count: 1, color: "dim maroon" },
     ],
   },
   {
     color: "muted crimson",
-    contain: [
+    content: [
       { count: 4, color: "mirrored teal" },
       { count: 4, color: "faded yellow" },
       { count: 5, color: "striped aqua" },
@@ -1689,7 +1689,7 @@ const input = [
   },
   {
     color: "clear plum",
-    contain: [
+    content: [
       { count: 1, color: "dark indigo" },
       { count: 3, color: "shiny gold" },
       { count: 2, color: "dim gray" },
@@ -1697,7 +1697,7 @@ const input = [
   },
   {
     color: "dull gray",
-    contain: [
+    content: [
       { count: 5, color: "striped bronze" },
       { count: 5, color: "plaid magenta" },
       { count: 3, color: "muted orange" },
@@ -1705,7 +1705,7 @@ const input = [
   },
   {
     color: "plaid violet",
-    contain: [
+    content: [
       { count: 3, color: "dotted yellow" },
       { count: 1, color: "dotted aqua" },
       { count: 5, color: "clear orange" },
@@ -1713,20 +1713,20 @@ const input = [
   },
   {
     color: "light beige",
-    contain: [
+    content: [
       { count: 4, color: "dim tomato" },
       { count: 1, color: "pale yellow" },
       { count: 3, color: "faded beige" },
       { count: 3, color: "dim yellow" },
     ],
   },
-  { color: "plaid olive", contain: [{ count: 5, color: "shiny tan" }] },
-  { color: "faded fuchsia", contain: [{ count: 4, color: "wavy maroon" }] },
-  { color: "bright crimson", contain: [{ count: 5, color: "bright orange" }] },
-  { color: "drab chartreuse", contain: [{ count: 4, color: "drab red" }] },
+  { color: "plaid olive", content: [{ count: 5, color: "shiny tan" }] },
+  { color: "faded fuchsia", content: [{ count: 4, color: "wavy maroon" }] },
+  { color: "bright crimson", content: [{ count: 5, color: "bright orange" }] },
+  { color: "drab chartreuse", content: [{ count: 4, color: "drab red" }] },
   {
     color: "dotted plum",
-    contain: [
+    content: [
       { count: 5, color: "striped blue" },
       { count: 5, color: "light gold" },
       { count: 4, color: "vibrant teal" },
@@ -1734,7 +1734,7 @@ const input = [
   },
   {
     color: "muted plum",
-    contain: [
+    content: [
       { count: 5, color: "faded white" },
       { count: 5, color: "striped brown" },
       { count: 1, color: "posh brown" },
@@ -1743,7 +1743,7 @@ const input = [
   },
   {
     color: "bright turquoise",
-    contain: [
+    content: [
       { count: 2, color: "dull indigo" },
       { count: 2, color: "mirrored tan" },
       { count: 5, color: "clear tomato" },
@@ -1751,17 +1751,17 @@ const input = [
   },
   {
     color: "drab violet",
-    contain: [
+    content: [
       { count: 3, color: "clear black" },
       { count: 2, color: "mirrored teal" },
       { count: 5, color: "faded yellow" },
       { count: 4, color: "vibrant magenta" },
     ],
   },
-  { color: "dotted blue", contain: [{ count: 3, color: "posh black" }] },
+  { color: "dotted blue", content: [{ count: 3, color: "posh black" }] },
   {
     color: "light silver",
-    contain: [
+    content: [
       { count: 5, color: "bright tan" },
       { count: 1, color: "dull silver" },
       { count: 5, color: "posh magenta" },
@@ -1770,21 +1770,21 @@ const input = [
   },
   {
     color: "drab indigo",
-    contain: [
+    content: [
       { count: 1, color: "dark purple" },
       { count: 1, color: "pale magenta" },
     ],
   },
   {
     color: "pale teal",
-    contain: [
+    content: [
       { count: 5, color: "striped black" },
       { count: 1, color: "faded cyan" },
     ],
   },
   {
     color: "shiny coral",
-    contain: [
+    content: [
       { count: 1, color: "mirrored lavender" },
       { count: 5, color: "mirrored bronze" },
       { count: 1, color: "bright violet" },
@@ -1792,7 +1792,7 @@ const input = [
   },
   {
     color: "shiny maroon",
-    contain: [
+    content: [
       { count: 3, color: "mirrored teal" },
       { count: 4, color: "light bronze" },
       { count: 5, color: "plaid yellow" },
@@ -1800,7 +1800,7 @@ const input = [
   },
   {
     color: "dim indigo",
-    contain: [
+    content: [
       { count: 4, color: "clear salmon" },
       { count: 1, color: "pale gray" },
       { count: 5, color: "posh purple" },
@@ -1808,7 +1808,7 @@ const input = [
   },
   {
     color: "dotted purple",
-    contain: [
+    content: [
       { count: 5, color: "shiny tan" },
       { count: 4, color: "posh indigo" },
       { count: 2, color: "light maroon" },
@@ -1817,7 +1817,7 @@ const input = [
   },
   {
     color: "pale indigo",
-    contain: [
+    content: [
       { count: 2, color: "dark orange" },
       { count: 3, color: "bright chartreuse" },
       { count: 5, color: "pale purple" },
@@ -1825,14 +1825,14 @@ const input = [
   },
   {
     color: "striped salmon",
-    contain: [
+    content: [
       { count: 3, color: "drab red" },
       { count: 1, color: "light silver" },
     ],
   },
   {
     color: "dim tan",
-    contain: [
+    content: [
       { count: 5, color: "muted silver" },
       { count: 5, color: "dull tomato" },
       { count: 2, color: "dull violet" },
@@ -1840,19 +1840,19 @@ const input = [
   },
   {
     color: "striped cyan",
-    contain: [
+    content: [
       { count: 3, color: "striped green" },
       { count: 4, color: "muted cyan" },
       { count: 5, color: "wavy beige" },
     ],
   },
-  { color: "posh gold", contain: [{ count: 3, color: "dotted aqua" }] },
-  { color: "drab magenta", contain: [{ count: 1, color: "dim olive" }] },
-  { color: "dull maroon", contain: [{ count: 2, color: "dotted gray" }] },
-  { color: "drab lavender", contain: [{ count: 2, color: "dark tomato" }] },
+  { color: "posh gold", content: [{ count: 3, color: "dotted aqua" }] },
+  { color: "drab magenta", content: [{ count: 1, color: "dim olive" }] },
+  { color: "dull maroon", content: [{ count: 2, color: "dotted gray" }] },
+  { color: "drab lavender", content: [{ count: 2, color: "dark tomato" }] },
   {
     color: "drab gray",
-    contain: [
+    content: [
       { count: 5, color: "faded plum" },
       { count: 2, color: "faded turquoise" },
       { count: 3, color: "shiny purple" },
@@ -1860,7 +1860,7 @@ const input = [
   },
   {
     color: "drab bronze",
-    contain: [
+    content: [
       { count: 3, color: "shiny indigo" },
       { count: 2, color: "dull silver" },
       { count: 1, color: "pale indigo" },
@@ -1868,7 +1868,7 @@ const input = [
   },
   {
     color: "dark gold",
-    contain: [
+    content: [
       { count: 1, color: "striped bronze" },
       { count: 3, color: "shiny gold" },
       { count: 4, color: "striped purple" },
@@ -1877,18 +1877,18 @@ const input = [
   },
   {
     color: "mirrored bronze",
-    contain: [
+    content: [
       { count: 3, color: "clear maroon" },
       { count: 2, color: "striped plum" },
       { count: 1, color: "vibrant plum" },
       { count: 5, color: "mirrored aqua" },
     ],
   },
-  { color: "clear purple", contain: [{ count: 2, color: "dim maroon" }] },
-  { color: "bright blue", contain: [{ count: 1, color: "vibrant aqua" }] },
+  { color: "clear purple", content: [{ count: 2, color: "dim maroon" }] },
+  { color: "bright blue", content: [{ count: 1, color: "vibrant aqua" }] },
   {
     color: "striped tan",
-    contain: [
+    content: [
       { count: 3, color: "clear beige" },
       { count: 5, color: "bright chartreuse" },
       { count: 5, color: "shiny beige" },
@@ -1896,7 +1896,7 @@ const input = [
   },
   {
     color: "plaid blue",
-    contain: [
+    content: [
       { count: 4, color: "wavy red" },
       { count: 3, color: "clear salmon" },
       { count: 2, color: "striped black" },
@@ -1905,14 +1905,14 @@ const input = [
   },
   {
     color: "striped coral",
-    contain: [
+    content: [
       { count: 2, color: "shiny aqua" },
       { count: 5, color: "light aqua" },
     ],
   },
   {
     color: "pale yellow",
-    contain: [
+    content: [
       { count: 3, color: "clear aqua" },
       { count: 4, color: "shiny indigo" },
       { count: 2, color: "dim purple" },
@@ -1920,7 +1920,7 @@ const input = [
   },
   {
     color: "wavy black",
-    contain: [
+    content: [
       { count: 5, color: "light gray" },
       { count: 5, color: "dim green" },
       { count: 4, color: "muted cyan" },
@@ -1928,7 +1928,7 @@ const input = [
   },
   {
     color: "shiny beige",
-    contain: [
+    content: [
       { count: 5, color: "faded coral" },
       { count: 1, color: "muted cyan" },
       { count: 2, color: "dark aqua" },
@@ -1937,15 +1937,15 @@ const input = [
   },
   {
     color: "mirrored red",
-    contain: [
+    content: [
       { count: 3, color: "striped blue" },
       { count: 4, color: "bright yellow" },
     ],
   },
-  { color: "plaid chartreuse", contain: [{ count: 5, color: "dotted coral" }] },
+  { color: "plaid chartreuse", content: [{ count: 5, color: "dotted coral" }] },
   {
     color: "dark white",
-    contain: [
+    content: [
       { count: 3, color: "wavy white" },
       { count: 4, color: "bright violet" },
       { count: 5, color: "drab bronze" },
@@ -1953,7 +1953,7 @@ const input = [
   },
   {
     color: "drab lime",
-    contain: [
+    content: [
       { count: 4, color: "striped silver" },
       { count: 5, color: "dim black" },
       { count: 1, color: "posh teal" },
@@ -1961,7 +1961,7 @@ const input = [
   },
   {
     color: "clear magenta",
-    contain: [
+    content: [
       { count: 3, color: "dark tomato" },
       { count: 5, color: "drab silver" },
       { count: 2, color: "shiny indigo" },
@@ -1970,17 +1970,17 @@ const input = [
   },
   {
     color: "plaid white",
-    contain: [
+    content: [
       { count: 5, color: "dotted green" },
       { count: 2, color: "light silver" },
       { count: 3, color: "plaid lavender" },
       { count: 1, color: "posh purple" },
     ],
   },
-  { color: "shiny indigo", contain: [{ count: 2, color: "drab orange" }] },
+  { color: "shiny indigo", content: [{ count: 2, color: "drab orange" }] },
   {
     color: "faded green",
-    contain: [
+    content: [
       { count: 3, color: "muted cyan" },
       { count: 5, color: "posh orange" },
       { count: 3, color: "plaid plum" },
@@ -1988,7 +1988,7 @@ const input = [
   },
   {
     color: "striped bronze",
-    contain: [
+    content: [
       { count: 2, color: "light plum" },
       { count: 3, color: "shiny teal" },
       { count: 4, color: "posh black" },
@@ -1996,14 +1996,14 @@ const input = [
   },
   {
     color: "pale olive",
-    contain: [
+    content: [
       { count: 5, color: "striped gray" },
       { count: 3, color: "striped lime" },
     ],
   },
   {
     color: "dim orange",
-    contain: [
+    content: [
       { count: 4, color: "mirrored maroon" },
       { count: 2, color: "mirrored teal" },
       { count: 4, color: "dim green" },
@@ -2012,21 +2012,21 @@ const input = [
   },
   {
     color: "pale cyan",
-    contain: [
+    content: [
       { count: 1, color: "light tomato" },
       { count: 2, color: "dotted tan" },
     ],
   },
   {
     color: "muted chartreuse",
-    contain: [
+    content: [
       { count: 2, color: "dim coral" },
       { count: 3, color: "posh indigo" },
     ],
   },
   {
     color: "dull tan",
-    contain: [
+    content: [
       { count: 1, color: "clear teal" },
       { count: 2, color: "dark blue" },
       { count: 1, color: "bright magenta" },
@@ -2034,21 +2034,21 @@ const input = [
   },
   {
     color: "bright olive",
-    contain: [
+    content: [
       { count: 3, color: "mirrored lavender" },
       { count: 4, color: "plaid bronze" },
     ],
   },
   {
     color: "dark maroon",
-    contain: [
+    content: [
       { count: 1, color: "clear blue" },
       { count: 4, color: "dotted gray" },
     ],
   },
   {
     color: "plaid coral",
-    contain: [
+    content: [
       { count: 4, color: "muted salmon" },
       { count: 3, color: "light teal" },
       { count: 4, color: "pale black" },
@@ -2056,33 +2056,33 @@ const input = [
   },
   {
     color: "pale beige",
-    contain: [
+    content: [
       { count: 5, color: "pale lavender" },
       { count: 1, color: "shiny lime" },
       { count: 3, color: "shiny yellow" },
       { count: 5, color: "striped purple" },
     ],
   },
-  { color: "vibrant brown", contain: [{ count: 2, color: "drab yellow" }] },
+  { color: "vibrant brown", content: [{ count: 2, color: "drab yellow" }] },
   {
     color: "striped silver",
-    contain: [
+    content: [
       { count: 3, color: "vibrant aqua" },
       { count: 1, color: "faded silver" },
     ],
   },
-  { color: "drab gold", contain: [{ count: 1, color: "bright salmon" }] },
-  { color: "vibrant red", contain: [{ count: 1, color: "bright red" }] },
+  { color: "drab gold", content: [{ count: 1, color: "bright salmon" }] },
+  { color: "vibrant red", content: [{ count: 1, color: "bright red" }] },
   {
     color: "striped chartreuse",
-    contain: [
+    content: [
       { count: 2, color: "faded chartreuse" },
       { count: 2, color: "striped tan" },
     ],
   },
   {
     color: "dotted yellow",
-    contain: [
+    content: [
       { count: 3, color: "drab aqua" },
       { count: 3, color: "dark gold" },
       { count: 3, color: "shiny orange" },
@@ -2090,7 +2090,7 @@ const input = [
   },
   {
     color: "dotted gold",
-    contain: [
+    content: [
       { count: 2, color: "posh fuchsia" },
       { count: 3, color: "faded teal" },
       { count: 1, color: "pale black" },
@@ -2099,16 +2099,16 @@ const input = [
   },
   {
     color: "dark bronze",
-    contain: [
+    content: [
       { count: 2, color: "pale tomato" },
       { count: 5, color: "posh fuchsia" },
       { count: 5, color: "muted green" },
     ],
   },
-  { color: "drab brown", contain: [{ count: 4, color: "dotted magenta" }] },
+  { color: "drab brown", content: [{ count: 4, color: "dotted magenta" }] },
   {
     color: "dull bronze",
-    contain: [
+    content: [
       { count: 1, color: "posh white" },
       { count: 2, color: "muted teal" },
       { count: 5, color: "vibrant tan" },
@@ -2116,33 +2116,33 @@ const input = [
   },
   {
     color: "bright brown",
-    contain: [
+    content: [
       { count: 3, color: "bright bronze" },
       { count: 2, color: "shiny tan" },
       { count: 3, color: "dull green" },
     ],
   },
-  { color: "dotted green", contain: [{ count: 4, color: "dim green" }] },
+  { color: "dotted green", content: [{ count: 4, color: "dim green" }] },
   {
     color: "vibrant turquoise",
-    contain: [
+    content: [
       { count: 1, color: "mirrored magenta" },
       { count: 2, color: "dark bronze" },
     ],
   },
   {
     color: "dim olive",
-    contain: [
+    content: [
       { count: 3, color: "mirrored blue" },
       { count: 5, color: "drab maroon" },
       { count: 1, color: "clear lime" },
     ],
   },
-  { color: "posh plum", contain: [{ count: 5, color: "pale indigo" }] },
-  { color: "plaid bronze", contain: [{ count: 1, color: "plaid blue" }] },
+  { color: "posh plum", content: [{ count: 5, color: "pale indigo" }] },
+  { color: "plaid bronze", content: [{ count: 1, color: "plaid blue" }] },
   {
     color: "shiny brown",
-    contain: [
+    content: [
       { count: 3, color: "shiny salmon" },
       { count: 1, color: "striped tan" },
       { count: 4, color: "clear aqua" },
@@ -2150,37 +2150,37 @@ const input = [
   },
   {
     color: "clear olive",
-    contain: [
+    content: [
       { count: 4, color: "bright aqua" },
       { count: 1, color: "clear maroon" },
       { count: 4, color: "mirrored maroon" },
     ],
   },
-  { color: "shiny black", contain: [{ count: 3, color: "pale violet" }] },
+  { color: "shiny black", content: [{ count: 3, color: "pale violet" }] },
   {
     color: "dotted lime",
-    contain: [
+    content: [
       { count: 5, color: "posh purple" },
       { count: 3, color: "dotted fuchsia" },
     ],
   },
   {
     color: "clear lavender",
-    contain: [
+    content: [
       { count: 4, color: "striped fuchsia" },
       { count: 3, color: "pale yellow" },
     ],
   },
   {
     color: "muted magenta",
-    contain: [
+    content: [
       { count: 3, color: "dim beige" },
       { count: 2, color: "wavy plum" },
     ],
   },
   {
     color: "muted turquoise",
-    contain: [
+    content: [
       { count: 1, color: "faded cyan" },
       { count: 3, color: "bright tan" },
       { count: 3, color: "striped brown" },
@@ -2188,7 +2188,7 @@ const input = [
   },
   {
     color: "wavy gold",
-    contain: [
+    content: [
       { count: 5, color: "striped tan" },
       { count: 5, color: "muted salmon" },
       { count: 5, color: "dark gold" },
@@ -2197,7 +2197,7 @@ const input = [
   },
   {
     color: "dull violet",
-    contain: [
+    content: [
       { count: 1, color: "faded white" },
       { count: 1, color: "striped black" },
       { count: 2, color: "vibrant maroon" },
@@ -2206,7 +2206,7 @@ const input = [
   },
   {
     color: "clear beige",
-    contain: [
+    content: [
       { count: 1, color: "shiny tomato" },
       { count: 5, color: "posh brown" },
       { count: 1, color: "faded cyan" },
@@ -2215,25 +2215,25 @@ const input = [
   },
   {
     color: "muted olive",
-    contain: [
+    content: [
       { count: 1, color: "dotted chartreuse" },
       { count: 3, color: "pale chartreuse" },
     ],
   },
   {
     color: "posh blue",
-    contain: [
+    content: [
       { count: 3, color: "light red" },
       { count: 1, color: "bright lavender" },
       { count: 4, color: "dim coral" },
       { count: 2, color: "clear lime" },
     ],
   },
-  { color: "striped olive", contain: [{ count: 3, color: "shiny gold" }] },
-  { color: "mirrored tan", contain: [{ count: 3, color: "muted tomato" }] },
+  { color: "striped olive", content: [{ count: 3, color: "shiny gold" }] },
+  { color: "mirrored tan", content: [{ count: 3, color: "muted tomato" }] },
   {
     color: "shiny plum",
-    contain: [
+    content: [
       { count: 2, color: "dark olive" },
       { count: 3, color: "wavy green" },
       { count: 2, color: "shiny lavender" },
@@ -2241,7 +2241,7 @@ const input = [
   },
   {
     color: "plaid teal",
-    contain: [
+    content: [
       { count: 3, color: "posh purple" },
       { count: 1, color: "muted violet" },
       { count: 2, color: "dark tan" },
@@ -2250,28 +2250,28 @@ const input = [
   },
   {
     color: "striped white",
-    contain: [
+    content: [
       { count: 1, color: "striped turquoise" },
       { count: 3, color: "shiny yellow" },
     ],
   },
   {
     color: "vibrant beige",
-    contain: [
+    content: [
       { count: 1, color: "clear olive" },
       { count: 4, color: "wavy lime" },
     ],
   },
   {
     color: "vibrant crimson",
-    contain: [
+    content: [
       { count: 4, color: "muted salmon" },
       { count: 5, color: "light bronze" },
     ],
   },
   {
     color: "muted aqua",
-    contain: [
+    content: [
       { count: 4, color: "plaid gold" },
       { count: 1, color: "clear olive" },
       { count: 1, color: "striped silver" },
@@ -2280,7 +2280,7 @@ const input = [
   },
   {
     color: "dotted indigo",
-    contain: [
+    content: [
       { count: 1, color: "light gray" },
       { count: 3, color: "dark olive" },
       { count: 1, color: "faded beige" },
@@ -2288,7 +2288,7 @@ const input = [
   },
   {
     color: "wavy aqua",
-    contain: [
+    content: [
       { count: 3, color: "muted fuchsia" },
       { count: 1, color: "dull coral" },
       { count: 2, color: "dark tan" },
@@ -2297,7 +2297,7 @@ const input = [
   },
   {
     color: "dull coral",
-    contain: [
+    content: [
       { count: 1, color: "bright gold" },
       { count: 5, color: "dark salmon" },
       { count: 3, color: "mirrored fuchsia" },
@@ -2306,21 +2306,21 @@ const input = [
   },
   {
     color: "vibrant plum",
-    contain: [
+    content: [
       { count: 1, color: "drab violet" },
       { count: 3, color: "shiny beige" },
     ],
   },
   {
     color: "mirrored white",
-    contain: [
+    content: [
       { count: 3, color: "drab bronze" },
       { count: 3, color: "shiny aqua" },
     ],
   },
   {
     color: "dotted fuchsia",
-    contain: [
+    content: [
       { count: 5, color: "vibrant cyan" },
       { count: 4, color: "mirrored teal" },
       { count: 1, color: "drab white" },
@@ -2329,22 +2329,22 @@ const input = [
   },
   {
     color: "bright chartreuse",
-    contain: [
+    content: [
       { count: 2, color: "shiny gold" },
       { count: 5, color: "dim green" },
     ],
   },
-  { color: "dim gold", contain: [{ count: 5, color: "muted purple" }] },
+  { color: "dim gold", content: [{ count: 5, color: "muted purple" }] },
   {
     color: "posh olive",
-    contain: [
+    content: [
       { count: 2, color: "faded yellow" },
       { count: 5, color: "dotted gray" },
     ],
   },
   {
     color: "drab purple",
-    contain: [
+    content: [
       { count: 5, color: "vibrant beige" },
       { count: 4, color: "striped indigo" },
       { count: 3, color: "pale fuchsia" },
@@ -2352,7 +2352,7 @@ const input = [
   },
   {
     color: "drab red",
-    contain: [
+    content: [
       { count: 1, color: "faded blue" },
       { count: 5, color: "dull indigo" },
       { count: 4, color: "posh purple" },
@@ -2361,14 +2361,14 @@ const input = [
   },
   {
     color: "shiny gray",
-    contain: [
+    content: [
       { count: 1, color: "drab violet" },
       { count: 1, color: "dotted yellow" },
     ],
   },
   {
     color: "shiny violet",
-    contain: [
+    content: [
       { count: 4, color: "clear salmon" },
       { count: 5, color: "shiny cyan" },
       { count: 2, color: "shiny tomato" },
@@ -2376,7 +2376,7 @@ const input = [
   },
   {
     color: "plaid red",
-    contain: [
+    content: [
       { count: 5, color: "dull olive" },
       { count: 3, color: "pale teal" },
       { count: 2, color: "clear bronze" },
@@ -2385,14 +2385,14 @@ const input = [
   },
   {
     color: "clear coral",
-    contain: [
+    content: [
       { count: 1, color: "faded bronze" },
       { count: 5, color: "dull red" },
     ],
   },
   {
     color: "shiny purple",
-    contain: [
+    content: [
       { count: 4, color: "clear blue" },
       { count: 3, color: "pale red" },
       { count: 5, color: "dull tomato" },
@@ -2401,7 +2401,7 @@ const input = [
   },
   {
     color: "dotted black",
-    contain: [
+    content: [
       { count: 4, color: "muted tan" },
       { count: 2, color: "dim tan" },
       { count: 2, color: "muted cyan" },
@@ -2410,7 +2410,7 @@ const input = [
   },
   {
     color: "pale blue",
-    contain: [
+    content: [
       { count: 3, color: "wavy gray" },
       { count: 2, color: "drab violet" },
       { count: 2, color: "dull chartreuse" },
@@ -2419,14 +2419,14 @@ const input = [
   },
   {
     color: "mirrored lavender",
-    contain: [
+    content: [
       { count: 1, color: "wavy green" },
       { count: 3, color: "striped brown" },
     ],
   },
   {
     color: "plaid turquoise",
-    contain: [
+    content: [
       { count: 4, color: "clear gray" },
       { count: 1, color: "muted green" },
       { count: 3, color: "dull tan" },
@@ -2435,7 +2435,7 @@ const input = [
   },
   {
     color: "bright tan",
-    contain: [
+    content: [
       { count: 4, color: "shiny olive" },
       { count: 1, color: "clear salmon" },
       { count: 4, color: "bright indigo" },
@@ -2444,7 +2444,7 @@ const input = [
   },
   {
     color: "dark lime",
-    contain: [
+    content: [
       { count: 4, color: "bright chartreuse" },
       { count: 3, color: "posh maroon" },
       { count: 1, color: "shiny tan" },
@@ -2453,7 +2453,7 @@ const input = [
   },
   {
     color: "clear turquoise",
-    contain: [
+    content: [
       { count: 3, color: "bright orange" },
       { count: 1, color: "faded yellow" },
       { count: 5, color: "posh purple" },
@@ -2462,15 +2462,15 @@ const input = [
   },
   {
     color: "plaid beige",
-    contain: [
+    content: [
       { count: 4, color: "light blue" },
       { count: 5, color: "bright bronze" },
     ],
   },
-  { color: "pale gold", contain: [{ count: 1, color: "pale indigo" }] },
+  { color: "pale gold", content: [{ count: 1, color: "pale indigo" }] },
   {
     color: "light maroon",
-    contain: [
+    content: [
       { count: 3, color: "faded cyan" },
       { count: 5, color: "shiny lavender" },
       { count: 3, color: "drab yellow" },
@@ -2478,7 +2478,7 @@ const input = [
   },
   {
     color: "posh white",
-    contain: [
+    content: [
       { count: 2, color: "mirrored lavender" },
       { count: 2, color: "posh teal" },
       { count: 3, color: "dull teal" },
@@ -2487,34 +2487,34 @@ const input = [
   },
   {
     color: "shiny tan",
-    contain: [
+    content: [
       { count: 2, color: "bright indigo" },
       { count: 3, color: "plaid lime" },
       { count: 3, color: "light chartreuse" },
     ],
   },
-  { color: "wavy violet", contain: [{ count: 2, color: "drab orange" }] },
+  { color: "wavy violet", content: [{ count: 2, color: "drab orange" }] },
   {
     color: "dotted bronze",
-    contain: [
+    content: [
       { count: 2, color: "mirrored aqua" },
       { count: 3, color: "dull fuchsia" },
     ],
   },
-  { color: "dull lime", contain: [{ count: 2, color: "bright lavender" }] },
+  { color: "dull lime", content: [{ count: 2, color: "bright lavender" }] },
   {
     color: "shiny salmon",
-    contain: [
+    content: [
       { count: 5, color: "posh olive" },
       { count: 3, color: "pale teal" },
     ],
   },
-  { color: "light lime", contain: [{ count: 1, color: "light plum" }] },
-  { color: "mirrored silver", contain: [{ count: 1, color: "clear purple" }] },
-  { color: "dark magenta", contain: [{ count: 1, color: "dotted yellow" }] },
+  { color: "light lime", content: [{ count: 1, color: "light plum" }] },
+  { color: "mirrored silver", content: [{ count: 1, color: "clear purple" }] },
+  { color: "dark magenta", content: [{ count: 1, color: "dotted yellow" }] },
   {
     color: "dotted white",
-    contain: [
+    content: [
       { count: 2, color: "vibrant aqua" },
       { count: 5, color: "pale green" },
       { count: 1, color: "dark fuchsia" },
@@ -2522,32 +2522,32 @@ const input = [
   },
   {
     color: "posh beige",
-    contain: [
+    content: [
       { count: 4, color: "drab maroon" },
       { count: 3, color: "muted cyan" },
     ],
   },
   {
     color: "faded blue",
-    contain: [
+    content: [
       { count: 5, color: "muted tomato" },
       { count: 5, color: "clear black" },
       { count: 4, color: "muted gray" },
     ],
   },
-  { color: "dim fuchsia", contain: [{ count: 5, color: "dark gold" }] },
-  { color: "vibrant lavender", contain: [{ count: 4, color: "shiny purple" }] },
+  { color: "dim fuchsia", content: [{ count: 5, color: "dark gold" }] },
+  { color: "vibrant lavender", content: [{ count: 4, color: "shiny purple" }] },
   {
     color: "pale bronze",
-    contain: [
+    content: [
       { count: 3, color: "wavy red" },
       { count: 4, color: "shiny tan" },
     ],
   },
-  { color: "plaid orange", contain: [{ count: 3, color: "vibrant indigo" }] },
+  { color: "plaid orange", content: [{ count: 3, color: "vibrant indigo" }] },
   {
     color: "bright coral",
-    contain: [
+    content: [
       { count: 3, color: "faded olive" },
       { count: 4, color: "striped coral" },
       { count: 5, color: "plaid violet" },
@@ -2556,31 +2556,31 @@ const input = [
   },
   {
     color: "striped teal",
-    contain: [
+    content: [
       { count: 1, color: "striped magenta" },
       { count: 5, color: "plaid white" },
     ],
   },
   {
     color: "plaid gray",
-    contain: [
+    content: [
       { count: 4, color: "dotted gray" },
       { count: 3, color: "clear beige" },
     ],
   },
-  { color: "faded salmon", contain: [{ count: 1, color: "dotted turquoise" }] },
+  { color: "faded salmon", content: [{ count: 1, color: "dotted turquoise" }] },
   {
     color: "striped violet",
-    contain: [
+    content: [
       { count: 3, color: "dim cyan" },
       { count: 5, color: "drab plum" },
       { count: 5, color: "pale gray" },
     ],
   },
-  { color: "dotted magenta", contain: [{ count: 3, color: "plaid bronze" }] },
+  { color: "dotted magenta", content: [{ count: 3, color: "plaid bronze" }] },
   {
     color: "dotted salmon",
-    contain: [
+    content: [
       { count: 4, color: "wavy tomato" },
       { count: 2, color: "vibrant silver" },
       { count: 5, color: "dim aqua" },
@@ -2588,17 +2588,17 @@ const input = [
   },
   {
     color: "dark aqua",
-    contain: [
+    content: [
       { count: 3, color: "posh olive" },
       { count: 4, color: "clear salmon" },
       { count: 2, color: "striped purple" },
       { count: 4, color: "faded yellow" },
     ],
   },
-  { color: "vibrant cyan", contain: [{ count: 4, color: "light red" }] },
+  { color: "vibrant cyan", content: [{ count: 4, color: "light red" }] },
   {
     color: "pale aqua",
-    contain: [
+    content: [
       { count: 5, color: "clear brown" },
       { count: 1, color: "muted cyan" },
       { count: 1, color: "pale maroon" },
@@ -2606,14 +2606,14 @@ const input = [
   },
   {
     color: "clear brown",
-    contain: [
+    content: [
       { count: 5, color: "vibrant white" },
       { count: 2, color: "clear blue" },
     ],
   },
   {
     color: "dim black",
-    contain: [
+    content: [
       { count: 3, color: "muted salmon" },
       { count: 2, color: "plaid bronze" },
       { count: 4, color: "shiny cyan" },
@@ -2622,7 +2622,7 @@ const input = [
   },
   {
     color: "pale crimson",
-    contain: [
+    content: [
       { count: 5, color: "pale lime" },
       { count: 1, color: "mirrored tomato" },
       { count: 2, color: "dull green" },
@@ -2631,7 +2631,7 @@ const input = [
   },
   {
     color: "shiny teal",
-    contain: [
+    content: [
       { count: 5, color: "dark chartreuse" },
       { count: 4, color: "faded yellow" },
       { count: 3, color: "faded coral" },
@@ -2639,7 +2639,7 @@ const input = [
   },
   {
     color: "faded brown",
-    contain: [
+    content: [
       { count: 4, color: "plaid plum" },
       { count: 5, color: "mirrored orange" },
       { count: 4, color: "shiny aqua" },
@@ -2647,34 +2647,34 @@ const input = [
   },
   {
     color: "pale silver",
-    contain: [
+    content: [
       { count: 1, color: "bright turquoise" },
       { count: 2, color: "mirrored yellow" },
       { count: 1, color: "faded red" },
     ],
   },
-  { color: "light black", contain: [{ count: 3, color: "shiny indigo" }] },
-  { color: "bright orange", contain: [{ count: 1, color: "faded coral" }] },
+  { color: "light black", content: [{ count: 3, color: "shiny indigo" }] },
+  { color: "bright orange", content: [{ count: 1, color: "faded coral" }] },
   {
     color: "drab fuchsia",
-    contain: [
+    content: [
       { count: 3, color: "wavy lavender" },
       { count: 3, color: "plaid yellow" },
       { count: 2, color: "clear olive" },
       { count: 4, color: "clear red" },
     ],
   },
-  { color: "bright lime", contain: [{ count: 2, color: "dull magenta" }] },
+  { color: "bright lime", content: [{ count: 2, color: "dull magenta" }] },
   {
     color: "pale magenta",
-    contain: [
+    content: [
       { count: 1, color: "faded white" },
       { count: 2, color: "faded salmon" },
     ],
   },
   {
     color: "light cyan",
-    contain: [
+    content: [
       { count: 1, color: "wavy yellow" },
       { count: 3, color: "bright crimson" },
       { count: 3, color: "striped violet" },
@@ -2682,7 +2682,7 @@ const input = [
   },
   {
     color: "shiny silver",
-    contain: [
+    content: [
       { count: 3, color: "shiny olive" },
       { count: 1, color: "dark plum" },
       { count: 2, color: "muted cyan" },
@@ -2690,14 +2690,14 @@ const input = [
   },
   {
     color: "shiny red",
-    contain: [
+    content: [
       { count: 3, color: "posh turquoise" },
       { count: 5, color: "pale gold" },
     ],
   },
   {
     color: "muted coral",
-    contain: [
+    content: [
       { count: 1, color: "shiny aqua" },
       { count: 5, color: "dim green" },
       { count: 2, color: "muted purple" },
@@ -2706,24 +2706,24 @@ const input = [
   },
   {
     color: "dark black",
-    contain: [
+    content: [
       { count: 3, color: "shiny gray" },
       { count: 2, color: "mirrored aqua" },
       { count: 3, color: "vibrant magenta" },
     ],
   },
-  { color: "dull yellow", contain: [{ count: 5, color: "clear teal" }] },
+  { color: "dull yellow", content: [{ count: 5, color: "clear teal" }] },
   {
     color: "shiny lime",
-    contain: [
+    content: [
       { count: 5, color: "posh magenta" },
       { count: 3, color: "light salmon" },
     ],
   },
-  { color: "muted tan", contain: [{ count: 4, color: "bright chartreuse" }] },
+  { color: "muted tan", content: [{ count: 4, color: "bright chartreuse" }] },
   {
     color: "bright magenta",
-    contain: [
+    content: [
       { count: 4, color: "dotted violet" },
       { count: 2, color: "light gold" },
       { count: 5, color: "dim indigo" },
@@ -2732,7 +2732,7 @@ const input = [
   },
   {
     color: "faded lime",
-    contain: [
+    content: [
       { count: 3, color: "mirrored gold" },
       { count: 5, color: "wavy tomato" },
       { count: 5, color: "muted lavender" },
@@ -2740,14 +2740,14 @@ const input = [
   },
   {
     color: "wavy coral",
-    contain: [
+    content: [
       { count: 3, color: "posh maroon" },
       { count: 1, color: "striped black" },
     ],
   },
   {
     color: "dull red",
-    contain: [
+    content: [
       { count: 4, color: "plaid yellow" },
       { count: 5, color: "drab lime" },
       { count: 5, color: "plaid plum" },
@@ -2755,7 +2755,7 @@ const input = [
   },
   {
     color: "wavy blue",
-    contain: [
+    content: [
       { count: 4, color: "bright brown" },
       { count: 1, color: "bright magenta" },
       { count: 5, color: "pale indigo" },
@@ -2764,14 +2764,14 @@ const input = [
   },
   {
     color: "dull salmon",
-    contain: [
+    content: [
       { count: 2, color: "mirrored orange" },
       { count: 3, color: "shiny plum" },
     ],
   },
   {
     color: "muted brown",
-    contain: [
+    content: [
       { count: 5, color: "dull beige" },
       { count: 3, color: "vibrant aqua" },
       { count: 3, color: "clear lavender" },
@@ -2779,30 +2779,30 @@ const input = [
   },
   {
     color: "faded lavender",
-    contain: [
+    content: [
       { count: 1, color: "vibrant orange" },
       { count: 3, color: "faded magenta" },
     ],
   },
   {
     color: "vibrant maroon",
-    contain: [
+    content: [
       { count: 3, color: "muted crimson" },
       { count: 5, color: "striped purple" },
       { count: 5, color: "pale tomato" },
     ],
   },
-  { color: "faded black", contain: [{ count: 2, color: "dark purple" }] },
+  { color: "faded black", content: [{ count: 2, color: "dark purple" }] },
   {
     color: "dim gray",
-    contain: [
+    content: [
       { count: 4, color: "dotted coral" },
       { count: 4, color: "muted orange" },
     ],
   },
   {
     color: "striped yellow",
-    contain: [
+    content: [
       { count: 1, color: "dark salmon" },
       { count: 1, color: "pale silver" },
       { count: 1, color: "wavy brown" },
@@ -2811,7 +2811,7 @@ const input = [
   },
   {
     color: "dim violet",
-    contain: [
+    content: [
       { count: 5, color: "posh magenta" },
       { count: 1, color: "pale aqua" },
       { count: 1, color: "pale maroon" },
@@ -2820,7 +2820,7 @@ const input = [
   },
   {
     color: "plaid indigo",
-    contain: [
+    content: [
       { count: 1, color: "shiny silver" },
       { count: 3, color: "pale gray" },
       { count: 4, color: "dull maroon" },
@@ -2829,7 +2829,7 @@ const input = [
   },
   {
     color: "light purple",
-    contain: [
+    content: [
       { count: 1, color: "faded violet" },
       { count: 4, color: "pale orange" },
       { count: 1, color: "drab yellow" },
@@ -2837,35 +2837,35 @@ const input = [
   },
   {
     color: "faded indigo",
-    contain: [
+    content: [
       { count: 5, color: "faded white" },
       { count: 2, color: "dotted lavender" },
       { count: 4, color: "dark gold" },
       { count: 1, color: "plaid plum" },
     ],
   },
-  { color: "vibrant tomato", contain: [{ count: 4, color: "light plum" }] },
-  { color: "light coral", contain: [{ count: 4, color: "posh fuchsia" }] },
+  { color: "vibrant tomato", content: [{ count: 4, color: "light plum" }] },
+  { color: "light coral", content: [{ count: 4, color: "posh fuchsia" }] },
   {
     color: "dotted coral",
-    contain: [
+    content: [
       { count: 3, color: "vibrant magenta" },
       { count: 5, color: "bright beige" },
     ],
   },
   {
     color: "drab olive",
-    contain: [
+    content: [
       { count: 2, color: "wavy salmon" },
       { count: 2, color: "pale aqua" },
       { count: 2, color: "dark indigo" },
       { count: 2, color: "drab green" },
     ],
   },
-  { color: "dull green", contain: [{ count: 5, color: "dull crimson" }] },
+  { color: "dull green", content: [{ count: 5, color: "dull crimson" }] },
   {
     color: "muted gray",
-    contain: [
+    content: [
       { count: 5, color: "bright chartreuse" },
       { count: 4, color: "clear fuchsia" },
       { count: 2, color: "light red" },
@@ -2874,7 +2874,7 @@ const input = [
   },
   {
     color: "clear red",
-    contain: [
+    content: [
       { count: 4, color: "pale teal" },
       { count: 2, color: "shiny gold" },
       { count: 1, color: "mirrored tomato" },
@@ -2883,7 +2883,7 @@ const input = [
   },
   {
     color: "vibrant violet",
-    contain: [
+    content: [
       { count: 3, color: "light gray" },
       { count: 2, color: "posh green" },
       { count: 3, color: "shiny salmon" },
@@ -2891,7 +2891,7 @@ const input = [
   },
   {
     color: "posh salmon",
-    contain: [
+    content: [
       { count: 4, color: "muted blue" },
       { count: 3, color: "posh purple" },
       { count: 4, color: "dim silver" },
@@ -2900,7 +2900,7 @@ const input = [
   },
   {
     color: "wavy white",
-    contain: [
+    content: [
       { count: 3, color: "wavy fuchsia" },
       { count: 1, color: "drab black" },
       { count: 5, color: "vibrant aqua" },
@@ -2909,24 +2909,24 @@ const input = [
   },
   {
     color: "light orange",
-    contain: [
+    content: [
       { count: 2, color: "light black" },
       { count: 1, color: "wavy maroon" },
     ],
   },
   {
     color: "shiny bronze",
-    contain: [
+    content: [
       { count: 1, color: "drab crimson" },
       { count: 1, color: "clear purple" },
       { count: 4, color: "dotted cyan" },
       { count: 5, color: "mirrored yellow" },
     ],
   },
-  { color: "dull tomato", contain: [{ count: 5, color: "dark gray" }] },
+  { color: "dull tomato", content: [{ count: 5, color: "dark gray" }] },
   {
     color: "wavy salmon",
-    contain: [
+    content: [
       { count: 4, color: "wavy orange" },
       { count: 5, color: "dull silver" },
       { count: 4, color: "wavy maroon" },
@@ -2935,34 +2935,34 @@ const input = [
   },
   {
     color: "shiny cyan",
-    contain: [
+    content: [
       { count: 5, color: "vibrant plum" },
       { count: 1, color: "plaid plum" },
     ],
   },
-  { color: "wavy turquoise", contain: [{ count: 2, color: "bright gold" }] },
+  { color: "wavy turquoise", content: [{ count: 2, color: "bright gold" }] },
   {
     color: "shiny crimson",
-    contain: [
+    content: [
       { count: 2, color: "faded indigo" },
       { count: 2, color: "muted lavender" },
     ],
   },
-  { color: "wavy brown", contain: [{ count: 2, color: "clear indigo" }] },
+  { color: "wavy brown", content: [{ count: 2, color: "clear indigo" }] },
   {
     color: "bright aqua",
-    contain: [
+    content: [
       { count: 2, color: "wavy plum" },
       { count: 2, color: "shiny beige" },
       { count: 5, color: "clear black" },
       { count: 2, color: "light black" },
     ],
   },
-  { color: "light bronze", contain: [{ count: 3, color: "vibrant maroon" }] },
-  { color: "vibrant fuchsia", contain: [{ count: 1, color: "dotted cyan" }] },
+  { color: "light bronze", content: [{ count: 3, color: "vibrant maroon" }] },
+  { color: "vibrant fuchsia", content: [{ count: 1, color: "dotted cyan" }] },
   {
     color: "dull crimson",
-    contain: [
+    content: [
       { count: 2, color: "plaid lime" },
       { count: 2, color: "plaid bronze" },
       { count: 3, color: "shiny orange" },
@@ -2970,7 +2970,7 @@ const input = [
   },
   {
     color: "mirrored tomato",
-    contain: [
+    content: [
       { count: 3, color: "clear maroon" },
       { count: 4, color: "striped crimson" },
       { count: 3, color: "drab plum" },
@@ -2979,16 +2979,16 @@ const input = [
   },
   {
     color: "dark silver",
-    contain: [
+    content: [
       { count: 5, color: "pale cyan" },
       { count: 4, color: "drab magenta" },
     ],
   },
-  { color: "posh lavender", contain: [{ count: 5, color: "faded olive" }] },
-  { color: "bright plum", contain: [{ count: 5, color: "posh indigo" }] },
+  { color: "posh lavender", content: [{ count: 5, color: "faded olive" }] },
+  { color: "bright plum", content: [{ count: 5, color: "posh indigo" }] },
   {
     color: "faded teal",
-    contain: [
+    content: [
       { count: 1, color: "vibrant maroon" },
       { count: 1, color: "wavy maroon" },
       { count: 2, color: "dark violet" },
@@ -2997,7 +2997,7 @@ const input = [
   },
   {
     color: "mirrored coral",
-    contain: [
+    content: [
       { count: 1, color: "muted magenta" },
       { count: 4, color: "clear turquoise" },
       { count: 5, color: "muted purple" },
@@ -3006,54 +3006,54 @@ const input = [
   },
   {
     color: "vibrant lime",
-    contain: [
+    content: [
       { count: 2, color: "pale lavender" },
       { count: 5, color: "clear purple" },
     ],
   },
   {
     color: "dark tan",
-    contain: [
+    content: [
       { count: 2, color: "bright beige" },
       { count: 5, color: "drab aqua" },
     ],
   },
   {
     color: "muted lavender",
-    contain: [
+    content: [
       { count: 3, color: "posh olive" },
       { count: 2, color: "faded cyan" },
     ],
   },
-  { color: "dull fuchsia", contain: [{ count: 3, color: "vibrant maroon" }] },
+  { color: "dull fuchsia", content: [{ count: 3, color: "vibrant maroon" }] },
   {
     color: "dim magenta",
-    contain: [
+    content: [
       { count: 4, color: "faded cyan" },
       { count: 3, color: "dim indigo" },
       { count: 1, color: "mirrored teal" },
       { count: 5, color: "vibrant teal" },
     ],
   },
-  { color: "posh orange", contain: [{ count: 1, color: "wavy green" }] },
+  { color: "posh orange", content: [{ count: 1, color: "wavy green" }] },
   {
     color: "clear white",
-    contain: [
+    content: [
       { count: 2, color: "faded purple" },
       { count: 4, color: "dotted yellow" },
     ],
   },
   {
     color: "light olive",
-    contain: [
+    content: [
       { count: 3, color: "faded plum" },
       { count: 3, color: "wavy chartreuse" },
     ],
   },
-  { color: "light fuchsia", contain: [{ count: 3, color: "clear orange" }] },
+  { color: "light fuchsia", content: [{ count: 3, color: "clear orange" }] },
   {
     color: "striped turquoise",
-    contain: [
+    content: [
       { count: 4, color: "faded cyan" },
       { count: 4, color: "bright green" },
       { count: 5, color: "mirrored magenta" },
@@ -3061,7 +3061,7 @@ const input = [
   },
   {
     color: "light teal",
-    contain: [
+    content: [
       { count: 1, color: "clear gold" },
       { count: 2, color: "dull olive" },
       { count: 2, color: "clear teal" },
@@ -3069,7 +3069,7 @@ const input = [
   },
   {
     color: "wavy teal",
-    contain: [
+    content: [
       { count: 1, color: "light gold" },
       { count: 5, color: "light chartreuse" },
       { count: 2, color: "dim purple" },
@@ -3077,17 +3077,17 @@ const input = [
   },
   {
     color: "striped beige",
-    contain: [
+    content: [
       { count: 2, color: "mirrored cyan" },
       { count: 2, color: "plaid aqua" },
       { count: 3, color: "dull lavender" },
       { count: 1, color: "dull chartreuse" },
     ],
   },
-  { color: "striped aqua", contain: [] },
+  { color: "striped aqua", content: [] },
   {
     color: "shiny green",
-    contain: [
+    content: [
       { count: 5, color: "posh tomato" },
       { count: 1, color: "faded olive" },
       { count: 5, color: "pale maroon" },
@@ -3095,7 +3095,7 @@ const input = [
   },
   {
     color: "posh magenta",
-    contain: [
+    content: [
       { count: 2, color: "dull green" },
       { count: 3, color: "wavy maroon" },
       { count: 4, color: "faded silver" },
@@ -3103,14 +3103,14 @@ const input = [
   },
   {
     color: "faded silver",
-    contain: [
+    content: [
       { count: 5, color: "dark lime" },
       { count: 2, color: "striped brown" },
     ],
   },
   {
     color: "dim maroon",
-    contain: [
+    content: [
       { count: 1, color: "light crimson" },
       { count: 5, color: "posh black" },
       { count: 5, color: "striped bronze" },
@@ -3118,7 +3118,7 @@ const input = [
   },
   {
     color: "dim chartreuse",
-    contain: [
+    content: [
       { count: 3, color: "pale plum" },
       { count: 2, color: "clear fuchsia" },
       { count: 3, color: "bright beige" },
@@ -3126,7 +3126,7 @@ const input = [
   },
   {
     color: "drab crimson",
-    contain: [
+    content: [
       { count: 4, color: "drab orange" },
       { count: 2, color: "dark blue" },
       { count: 1, color: "shiny gray" },
@@ -3135,7 +3135,7 @@ const input = [
   },
   {
     color: "dim beige",
-    contain: [
+    content: [
       { count: 4, color: "dark orange" },
       { count: 1, color: "shiny salmon" },
       { count: 5, color: "bright indigo" },
@@ -3144,7 +3144,7 @@ const input = [
   },
   {
     color: "light blue",
-    contain: [
+    content: [
       { count: 2, color: "vibrant white" },
       { count: 1, color: "pale turquoise" },
       { count: 3, color: "drab maroon" },
@@ -3153,7 +3153,7 @@ const input = [
   },
   {
     color: "dim aqua",
-    contain: [
+    content: [
       { count: 3, color: "bright chartreuse" },
       { count: 2, color: "clear black" },
       { count: 4, color: "dotted gray" },
@@ -3162,7 +3162,7 @@ const input = [
   },
   {
     color: "striped fuchsia",
-    contain: [
+    content: [
       { count: 2, color: "shiny teal" },
       { count: 4, color: "striped aqua" },
       { count: 4, color: "dull lavender" },
@@ -3171,7 +3171,7 @@ const input = [
   },
   {
     color: "wavy yellow",
-    contain: [
+    content: [
       { count: 5, color: "pale gray" },
       { count: 2, color: "faded red" },
       { count: 3, color: "vibrant silver" },
@@ -3179,7 +3179,7 @@ const input = [
   },
   {
     color: "bright fuchsia",
-    contain: [
+    content: [
       { count: 1, color: "faded teal" },
       { count: 5, color: "shiny lavender" },
       { count: 2, color: "muted cyan" },
@@ -3187,7 +3187,7 @@ const input = [
   },
   {
     color: "mirrored violet",
-    contain: [
+    content: [
       { count: 4, color: "plaid olive" },
       { count: 2, color: "dotted magenta" },
       { count: 4, color: "striped aqua" },
@@ -3196,27 +3196,27 @@ const input = [
   },
   {
     color: "wavy maroon",
-    contain: [
+    content: [
       { count: 2, color: "mirrored maroon" },
       { count: 3, color: "drab violet" },
       { count: 2, color: "dark plum" },
       { count: 2, color: "faded cyan" },
     ],
   },
-  { color: "dim green", contain: [{ count: 3, color: "clear lime" }] },
+  { color: "dim green", content: [{ count: 3, color: "clear lime" }] },
   {
     color: "muted beige",
-    contain: [
+    content: [
       { count: 4, color: "posh coral" },
       { count: 1, color: "mirrored teal" },
       { count: 5, color: "shiny cyan" },
       { count: 2, color: "light plum" },
     ],
   },
-  { color: "posh turquoise", contain: [{ count: 1, color: "dull fuchsia" }] },
+  { color: "posh turquoise", content: [{ count: 1, color: "dull fuchsia" }] },
   {
     color: "clear orange",
-    contain: [
+    content: [
       { count: 2, color: "faded chartreuse" },
       { count: 3, color: "dark blue" },
       { count: 5, color: "plaid yellow" },
@@ -3224,14 +3224,14 @@ const input = [
   },
   {
     color: "light green",
-    contain: [
+    content: [
       { count: 5, color: "mirrored chartreuse" },
       { count: 4, color: "pale bronze" },
     ],
   },
   {
     color: "clear bronze",
-    contain: [
+    content: [
       { count: 5, color: "vibrant coral" },
       { count: 2, color: "bright beige" },
       { count: 4, color: "dark lime" },
@@ -3239,28 +3239,28 @@ const input = [
   },
   {
     color: "clear silver",
-    contain: [
+    content: [
       { count: 1, color: "bright gray" },
       { count: 5, color: "dotted white" },
       { count: 2, color: "dotted lavender" },
       { count: 1, color: "dim violet" },
     ],
   },
-  { color: "drab green", contain: [{ count: 1, color: "drab violet" }] },
-  { color: "mirrored salmon", contain: [{ count: 1, color: "dim beige" }] },
+  { color: "drab green", content: [{ count: 1, color: "drab violet" }] },
+  { color: "mirrored salmon", content: [{ count: 1, color: "dim beige" }] },
   {
     color: "mirrored maroon",
-    contain: [
+    content: [
       { count: 2, color: "posh black" },
       { count: 4, color: "striped black" },
       { count: 2, color: "dotted gray" },
       { count: 4, color: "striped gray" },
     ],
   },
-  { color: "mirrored aqua", contain: [{ count: 4, color: "clear black" }] },
+  { color: "mirrored aqua", content: [{ count: 4, color: "clear black" }] },
   {
     color: "pale purple",
-    contain: [
+    content: [
       { count: 5, color: "dim green" },
       { count: 3, color: "striped tan" },
       { count: 5, color: "wavy olive" },
@@ -3269,26 +3269,26 @@ const input = [
   },
   {
     color: "dotted teal",
-    contain: [
+    content: [
       { count: 1, color: "dotted orange" },
       { count: 2, color: "dotted chartreuse" },
     ],
   },
-  { color: "vibrant olive", contain: [{ count: 2, color: "posh olive" }] },
-  { color: "dotted aqua", contain: [{ count: 5, color: "drab orange" }] },
+  { color: "vibrant olive", content: [{ count: 2, color: "posh olive" }] },
+  { color: "dotted aqua", content: [{ count: 5, color: "drab orange" }] },
   {
     color: "clear yellow",
-    contain: [
+    content: [
       { count: 1, color: "clear orange" },
       { count: 3, color: "dim beige" },
       { count: 3, color: "bright indigo" },
       { count: 1, color: "drab yellow" },
     ],
   },
-  { color: "vibrant gray", contain: [{ count: 3, color: "mirrored plum" }] },
+  { color: "vibrant gray", content: [{ count: 3, color: "mirrored plum" }] },
   {
     color: "dull beige",
-    contain: [
+    content: [
       { count: 3, color: "dull indigo" },
       { count: 2, color: "dotted lavender" },
       { count: 2, color: "shiny orange" },
@@ -3296,7 +3296,7 @@ const input = [
   },
   {
     color: "shiny chartreuse",
-    contain: [
+    content: [
       { count: 2, color: "light brown" },
       { count: 1, color: "faded tomato" },
       { count: 1, color: "drab black" },
@@ -3304,7 +3304,7 @@ const input = [
   },
   {
     color: "light chartreuse",
-    contain: [
+    content: [
       { count: 2, color: "wavy red" },
       { count: 4, color: "muted green" },
       { count: 1, color: "drab aqua" },
@@ -3313,7 +3313,7 @@ const input = [
   },
   {
     color: "bright violet",
-    contain: [
+    content: [
       { count: 4, color: "dotted yellow" },
       { count: 2, color: "shiny aqua" },
       { count: 2, color: "drab aqua" },
@@ -3322,15 +3322,15 @@ const input = [
   },
   {
     color: "dull gold",
-    contain: [
+    content: [
       { count: 2, color: "muted maroon" },
       { count: 1, color: "wavy maroon" },
     ],
   },
-  { color: "dotted beige", contain: [{ count: 4, color: "plaid magenta" }] },
+  { color: "dotted beige", content: [{ count: 4, color: "plaid magenta" }] },
   {
     color: "wavy silver",
-    contain: [
+    content: [
       { count: 5, color: "pale beige" },
       { count: 3, color: "posh orange" },
       { count: 1, color: "clear turquoise" },
@@ -3339,15 +3339,15 @@ const input = [
   },
   {
     color: "plaid aqua",
-    contain: [
+    content: [
       { count: 1, color: "dull lime" },
       { count: 5, color: "plaid crimson" },
     ],
   },
-  { color: "drab tomato", contain: [{ count: 4, color: "wavy plum" }] },
+  { color: "drab tomato", content: [{ count: 4, color: "wavy plum" }] },
   {
     color: "muted cyan",
-    contain: [
+    content: [
       { count: 5, color: "faded cyan" },
       { count: 4, color: "posh olive" },
       { count: 5, color: "faded yellow" },
@@ -3356,7 +3356,7 @@ const input = [
   },
   {
     color: "dull olive",
-    contain: [
+    content: [
       { count: 1, color: "dark black" },
       { count: 2, color: "clear gold" },
       { count: 4, color: "dark orange" },
@@ -3364,16 +3364,16 @@ const input = [
   },
   {
     color: "bright salmon",
-    contain: [
+    content: [
       { count: 5, color: "dark chartreuse" },
       { count: 5, color: "posh black" },
     ],
   },
-  { color: "wavy beige", contain: [{ count: 4, color: "dim green" }] },
-  { color: "posh fuchsia", contain: [{ count: 4, color: "drab plum" }] },
+  { color: "wavy beige", content: [{ count: 4, color: "dim green" }] },
+  { color: "posh fuchsia", content: [{ count: 4, color: "drab plum" }] },
   {
     color: "striped red",
-    contain: [
+    content: [
       { count: 5, color: "posh turquoise" },
       { count: 2, color: "posh indigo" },
       { count: 5, color: "dim silver" },
@@ -3381,12 +3381,12 @@ const input = [
   },
   {
     color: "dim lavender",
-    contain: [{ count: 5, color: "vibrant chartreuse" }],
+    content: [{ count: 5, color: "vibrant chartreuse" }],
   },
-  { color: "plaid green", contain: [{ count: 4, color: "striped fuchsia" }] },
+  { color: "plaid green", content: [{ count: 4, color: "striped fuchsia" }] },
   {
     color: "dull lavender",
-    contain: [
+    content: [
       { count: 5, color: "clear lime" },
       { count: 5, color: "wavy green" },
       { count: 2, color: "dark blue" },
@@ -3395,7 +3395,7 @@ const input = [
   },
   {
     color: "dark brown",
-    contain: [
+    content: [
       { count: 4, color: "light silver" },
       { count: 4, color: "pale violet" },
       { count: 3, color: "light cyan" },
@@ -3404,14 +3404,14 @@ const input = [
   },
   {
     color: "wavy green",
-    contain: [
+    content: [
       { count: 3, color: "mirrored teal" },
       { count: 2, color: "muted green" },
     ],
   },
   {
     color: "drab teal",
-    contain: [
+    content: [
       { count: 4, color: "shiny teal" },
       { count: 3, color: "striped aqua" },
       { count: 5, color: "dim coral" },
@@ -3419,7 +3419,7 @@ const input = [
   },
   {
     color: "shiny orange",
-    contain: [
+    content: [
       { count: 4, color: "drab aqua" },
       { count: 4, color: "pale teal" },
       { count: 3, color: "dull maroon" },
@@ -3427,7 +3427,7 @@ const input = [
   },
   {
     color: "vibrant blue",
-    contain: [
+    content: [
       { count: 2, color: "vibrant tomato" },
       { count: 1, color: "plaid cyan" },
       { count: 3, color: "pale red" },
@@ -3435,16 +3435,16 @@ const input = [
   },
   {
     color: "mirrored purple",
-    contain: [
+    content: [
       { count: 2, color: "striped tan" },
       { count: 1, color: "pale olive" },
     ],
   },
-  { color: "faded purple", contain: [{ count: 2, color: "plaid lavender" }] },
-  { color: "light aqua", contain: [{ count: 3, color: "vibrant chartreuse" }] },
+  { color: "faded purple", content: [{ count: 2, color: "plaid lavender" }] },
+  { color: "light aqua", content: [{ count: 3, color: "vibrant chartreuse" }] },
   {
     color: "vibrant magenta",
-    contain: [
+    content: [
       { count: 3, color: "clear salmon" },
       { count: 4, color: "posh brown" },
       { count: 4, color: "striped black" },
@@ -3452,32 +3452,32 @@ const input = [
   },
   {
     color: "plaid salmon",
-    contain: [
+    content: [
       { count: 1, color: "striped gray" },
       { count: 5, color: "dark plum" },
     ],
   },
   {
     color: "dim white",
-    contain: [
+    content: [
       { count: 3, color: "faded fuchsia" },
       { count: 2, color: "clear yellow" },
     ],
   },
   {
     color: "light magenta",
-    contain: [{ count: 1, color: "vibrant turquoise" }],
+    content: [{ count: 1, color: "vibrant turquoise" }],
   },
   {
     color: "clear chartreuse",
-    contain: [
+    content: [
       { count: 1, color: "posh olive" },
       { count: 1, color: "drab blue" },
     ],
   },
   {
     color: "clear tan",
-    contain: [
+    content: [
       { count: 2, color: "dark blue" },
       { count: 4, color: "light gold" },
       { count: 5, color: "muted indigo" },
@@ -3485,7 +3485,7 @@ const input = [
   },
   {
     color: "light turquoise",
-    contain: [
+    content: [
       { count: 4, color: "drab beige" },
       { count: 4, color: "shiny bronze" },
       { count: 3, color: "dull olive" },
@@ -3494,7 +3494,7 @@ const input = [
   },
   {
     color: "pale white",
-    contain: [
+    content: [
       { count: 5, color: "dotted white" },
       { count: 3, color: "faded gold" },
       { count: 5, color: "striped turquoise" },
@@ -3502,17 +3502,17 @@ const input = [
   },
   {
     color: "dark gray",
-    contain: [
+    content: [
       { count: 3, color: "clear teal" },
       { count: 4, color: "posh green" },
       { count: 2, color: "striped brown" },
       { count: 3, color: "light tomato" },
     ],
   },
-  { color: "clear maroon", contain: [{ count: 5, color: "drab maroon" }] },
+  { color: "clear maroon", content: [{ count: 5, color: "drab maroon" }] },
   {
     color: "vibrant white",
-    contain: [
+    content: [
       { count: 1, color: "muted green" },
       { count: 5, color: "dark aqua" },
       { count: 3, color: "clear black" },
@@ -3521,7 +3521,7 @@ const input = [
   },
   {
     color: "striped indigo",
-    contain: [
+    content: [
       { count: 1, color: "bright turquoise" },
       { count: 5, color: "shiny orange" },
       { count: 1, color: "clear fuchsia" },
@@ -3530,7 +3530,7 @@ const input = [
   },
   {
     color: "dull cyan",
-    contain: [
+    content: [
       { count: 2, color: "light salmon" },
       { count: 5, color: "striped magenta" },
       { count: 2, color: "wavy lavender" },
@@ -3539,38 +3539,38 @@ const input = [
   },
   {
     color: "wavy plum",
-    contain: [
+    content: [
       { count: 3, color: "muted crimson" },
       { count: 2, color: "dim green" },
     ],
   },
   {
     color: "pale tan",
-    contain: [
+    content: [
       { count: 3, color: "mirrored turquoise" },
       { count: 5, color: "wavy salmon" },
     ],
   },
   {
     color: "vibrant green",
-    contain: [
+    content: [
       { count: 5, color: "plaid chartreuse" },
       { count: 2, color: "muted teal" },
     ],
   },
   {
     color: "bright bronze",
-    contain: [
+    content: [
       { count: 4, color: "clear indigo" },
       { count: 1, color: "mirrored bronze" },
       { count: 1, color: "mirrored magenta" },
       { count: 5, color: "posh beige" },
     ],
   },
-  { color: "faded plum", contain: [{ count: 2, color: "dotted tan" }] },
+  { color: "faded plum", content: [{ count: 2, color: "dotted tan" }] },
   {
     color: "mirrored blue",
-    contain: [
+    content: [
       { count: 2, color: "clear lime" },
       { count: 5, color: "faded coral" },
       { count: 1, color: "drab aqua" },
@@ -3578,7 +3578,7 @@ const input = [
   },
   {
     color: "plaid gold",
-    contain: [
+    content: [
       { count: 2, color: "muted tomato" },
       { count: 1, color: "shiny blue" },
       { count: 1, color: "dim gray" },
@@ -3587,7 +3587,7 @@ const input = [
   },
   {
     color: "posh black",
-    contain: [
+    content: [
       { count: 3, color: "faded cyan" },
       { count: 5, color: "posh brown" },
       { count: 1, color: "striped black" },
@@ -3595,22 +3595,22 @@ const input = [
   },
   {
     color: "light salmon",
-    contain: [
+    content: [
       { count: 1, color: "clear lime" },
       { count: 4, color: "posh black" },
     ],
   },
-  { color: "muted violet", contain: [{ count: 4, color: "wavy cyan" }] },
+  { color: "muted violet", content: [{ count: 4, color: "wavy cyan" }] },
   {
     color: "faded cyan",
-    contain: [
+    content: [
       { count: 4, color: "faded coral" },
       { count: 3, color: "faded yellow" },
     ],
   },
   {
     color: "faded turquoise",
-    contain: [
+    content: [
       { count: 3, color: "wavy magenta" },
       { count: 3, color: "plaid bronze" },
       { count: 1, color: "dotted chartreuse" },
@@ -3618,7 +3618,7 @@ const input = [
   },
   {
     color: "plaid cyan",
-    contain: [
+    content: [
       { count: 1, color: "shiny tan" },
       { count: 1, color: "faded coral" },
       { count: 1, color: "vibrant plum" },
@@ -3627,21 +3627,21 @@ const input = [
   },
   {
     color: "mirrored brown",
-    contain: [
+    content: [
       { count: 1, color: "faded chartreuse" },
       { count: 2, color: "striped plum" },
     ],
   },
   {
     color: "light lavender",
-    contain: [
+    content: [
       { count: 1, color: "dull teal" },
       { count: 3, color: "dark fuchsia" },
     ],
   },
   {
     color: "striped crimson",
-    contain: [
+    content: [
       { count: 1, color: "light salmon" },
       { count: 2, color: "drab black" },
       { count: 3, color: "vibrant white" },
@@ -3650,25 +3650,25 @@ const input = [
   },
   {
     color: "dotted crimson",
-    contain: [
+    content: [
       { count: 1, color: "posh orange" },
       { count: 4, color: "muted green" },
       { count: 2, color: "mirrored indigo" },
     ],
   },
-  { color: "clear cyan", contain: [{ count: 3, color: "light yellow" }] },
+  { color: "clear cyan", content: [{ count: 3, color: "light yellow" }] },
   {
     color: "light indigo",
-    contain: [
+    content: [
       { count: 5, color: "plaid cyan" },
       { count: 2, color: "mirrored fuchsia" },
     ],
   },
-  { color: "light white", contain: [{ count: 2, color: "light chartreuse" }] },
-  { color: "drab yellow", contain: [{ count: 1, color: "mirrored blue" }] },
+  { color: "light white", content: [{ count: 2, color: "light chartreuse" }] },
+  { color: "drab yellow", content: [{ count: 1, color: "mirrored blue" }] },
   {
     color: "dim cyan",
-    contain: [
+    content: [
       { count: 2, color: "posh salmon" },
       { count: 5, color: "bright chartreuse" },
       { count: 3, color: "dark chartreuse" },
@@ -3676,7 +3676,7 @@ const input = [
   },
   {
     color: "pale gray",
-    contain: [
+    content: [
       { count: 5, color: "dim orange" },
       { count: 2, color: "dark plum" },
       { count: 1, color: "vibrant plum" },
@@ -3685,16 +3685,16 @@ const input = [
   },
   {
     color: "bright tomato",
-    contain: [
+    content: [
       { count: 3, color: "posh indigo" },
       { count: 1, color: "dotted aqua" },
       { count: 5, color: "muted olive" },
     ],
   },
-  { color: "shiny olive", contain: [{ count: 2, color: "drab aqua" }] },
+  { color: "shiny olive", content: [{ count: 2, color: "drab aqua" }] },
   {
     color: "mirrored turquoise",
-    contain: [
+    content: [
       { count: 3, color: "shiny violet" },
       { count: 3, color: "drab crimson" },
       { count: 3, color: "dotted tomato" },
@@ -3703,16 +3703,16 @@ const input = [
   },
   {
     color: "light gray",
-    contain: [
+    content: [
       { count: 1, color: "vibrant white" },
       { count: 2, color: "muted indigo" },
       { count: 3, color: "drab teal" },
     ],
   },
-  { color: "bright green", contain: [{ count: 4, color: "bright indigo" }] },
+  { color: "bright green", content: [{ count: 4, color: "bright indigo" }] },
   {
     color: "striped lavender",
-    contain: [
+    content: [
       { count: 2, color: "striped aqua" },
       { count: 5, color: "light crimson" },
       { count: 4, color: "drab maroon" },
@@ -3720,7 +3720,7 @@ const input = [
   },
   {
     color: "posh green",
-    contain: [
+    content: [
       { count: 2, color: "muted turquoise" },
       { count: 4, color: "dark blue" },
       { count: 4, color: "light chartreuse" },
@@ -3729,7 +3729,7 @@ const input = [
   },
   {
     color: "plaid fuchsia",
-    contain: [
+    content: [
       { count: 3, color: "shiny yellow" },
       { count: 2, color: "shiny maroon" },
       { count: 1, color: "clear aqua" },
@@ -3737,7 +3737,7 @@ const input = [
   },
   {
     color: "dim purple",
-    contain: [
+    content: [
       { count: 4, color: "light crimson" },
       { count: 2, color: "dotted yellow" },
       { count: 2, color: "mirrored maroon" },
@@ -3745,16 +3745,16 @@ const input = [
   },
   {
     color: "dark salmon",
-    contain: [
+    content: [
       { count: 2, color: "faded teal" },
       { count: 4, color: "drab white" },
       { count: 3, color: "posh bronze" },
     ],
   },
-  { color: "drab maroon", contain: [] },
+  { color: "drab maroon", content: [] },
   {
     color: "dark lavender",
-    contain: [
+    content: [
       { count: 4, color: "muted brown" },
       { count: 5, color: "dark orange" },
       { count: 1, color: "plaid aqua" },
@@ -3763,7 +3763,7 @@ const input = [
   },
   {
     color: "pale tomato",
-    contain: [
+    content: [
       { count: 5, color: "drab maroon" },
       { count: 2, color: "posh orange" },
       { count: 4, color: "pale bronze" },
@@ -3771,7 +3771,7 @@ const input = [
   },
   {
     color: "shiny gold",
-    contain: [
+    content: [
       { count: 2, color: "light chartreuse" },
       { count: 2, color: "drab black" },
       { count: 1, color: "bright orange" },
@@ -3780,14 +3780,14 @@ const input = [
   },
   {
     color: "bright beige",
-    contain: [
+    content: [
       { count: 5, color: "dim teal" },
       { count: 3, color: "posh indigo" },
     ],
   },
   {
     color: "dim crimson",
-    contain: [
+    content: [
       { count: 4, color: "wavy lime" },
       { count: 4, color: "dim orange" },
       { count: 1, color: "faded green" },
@@ -3795,21 +3795,21 @@ const input = [
   },
   {
     color: "dim red",
-    contain: [
+    content: [
       { count: 4, color: "drab plum" },
       { count: 4, color: "shiny gold" },
     ],
   },
   {
     color: "wavy tomato",
-    contain: [
+    content: [
       { count: 4, color: "plaid bronze" },
       { count: 1, color: "striped black" },
     ],
   },
   {
     color: "dark plum",
-    contain: [
+    content: [
       { count: 5, color: "shiny olive" },
       { count: 1, color: "drab violet" },
       { count: 2, color: "striped black" },

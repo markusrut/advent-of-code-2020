@@ -5,31 +5,48 @@ function calc() {
   let resultOne = 0;
   let resultTwo = 0;
 
-  let colorToCheck = "shiny gold";
-  var containsCorrectColor = [];
-  containsCorrectColor = checkAllBagsForColor(colorToCheck, containsCorrectColor);
+  const colorToCheck = "shiny gold";
+  let containsCorrectColor = [];
+  containsCorrectColor = checkAllBagsForContainingColor(
+    colorToCheck,
+    containsCorrectColor
+  );
+
+  const bag = input.find((b) => b.color === colorToCheck);
+  resultTwo = getBagCount(bag);
+
   resultOne = containsCorrectColor.length;
 
   resultOneElement.innerHTML = resultOne;
   resultTwoElement.innerHTML = resultTwo;
 }
 
-function checkAllBagsForColor(colorToCheck, containsCorrectColor) {
+function getBagCount(bag) {
+  let count = 0;
+  bag.content.forEach((c) => {
+    count += c.count;
+    const innerBag = input.find((b) => b.color === c.color)
+    count += c.count * getBagCount(innerBag);
+  });
+  return count;
+}
+
+function checkAllBagsForContainingColor(colorToCheck, result) {
   input.forEach((bag) => {
-    bag.contain.forEach((b) => {
+    bag.content.forEach((b) => {
       let colorMatch = b.color === colorToCheck;
-      let notAlreadyInList = !containsCorrectColor.includes(bag.color);
+      let notAlreadyInList = !result.includes(bag.color);
       if (colorMatch && notAlreadyInList) {
-        containsCorrectColor.push(bag.color);
-        containsCorrectColor = checkAllBagsForColor(bag.color, containsCorrectColor);
+        result.push(bag.color);
+        result = checkAllBagsForContainingColor(bag.color, result);
       }
     });
   });
-  return containsCorrectColor;
+  return result;
 }
 
 function log(string) {
-  // console.log(string);
+  console.log(string);
 }
 
 calc();
