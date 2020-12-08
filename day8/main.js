@@ -13,10 +13,13 @@ function calc(input) {
 
     visitedIndexes.push(index);
     const actionRow = input[index];
+    doAction(actionRow);
+  }
 
-    log(visitedIndexes);
-    log(actionRow);
+  resultOneElement.innerHTML = accumulator;
+  resultTwoElement.innerHTML = resultTwo;
 
+  function doAction(actionRow) {
     switch (actionRow.action) {
       case "nop":
         index++;
@@ -31,11 +34,7 @@ function calc(input) {
       default:
         break;
     }
-    log(index);
   }
-
-  resultOneElement.innerHTML = accumulator;
-  resultTwoElement.innerHTML = resultTwo;
 }
 
 function log(string) {
